@@ -35,6 +35,32 @@ Com que estem parlant d'imatges, hem relacionat cada missió amb un color 🎨 C
 missió té una dificultat diferent. A més a més, cada missió requereix com a mínim utilitzar uns recursos, així que,
 estigueu atents!
 
+### Com començar?
+
+Us recomanem que vingueu a les xerrades que fan els ex-LleidaHackers encara que no participeu al nostre repte. Us
+recomanem python com a llenguatge de programació i fer l'ús de [notebooks](https://jupyter.org/) per visualitzar les
+dades. Aquestes són les llibreries que us recomanem per tractar les dades:
+
+- [pandas](https://pandas.pydata.org/)
+- [numpy](https://numpy.org/)
+- [Pillow](https://pypi.org/project/Pillow/)
+- [matplotlib](https://pypi.org/project/matplotlib/)
+
+Coneixements de Machine Learning (ML) i Deep Learning (DL) seran útils en les últimes missions. Us deixem aquí unes
+llibreries.
+
+- [scikit-learn](https://scikit-learn.org/stable/install.html)
+- [tensorflow](https://www.tensorflow.org/)
+- [pytorch](https://pytorch.org/)
+
+Pel que fa a la visualització dels models:
+
+- [matplotlib](https://pypi.org/project/matplotlib/)
+- [seaborn](https://seaborn.pydata.org/)
+- [plotly](https://plotly.com/)
+- [tensorboard](https://www.tensorflow.org/tensorboard)
+- [streamlit](https://streamlit.io/)
+
 ### Recursos 📦
 
 Comptareu amb uns quants datasets, **A1**, **A2**, **A3** i  **B**. Encara que les imatges dels datasets estàn
@@ -119,9 +145,9 @@ Us deixem aquí uns recursos 📦 que de segur us seran ben útils!
 
 ### 🌺 Missió rosa
 
-Ostres! Les nostres càmares estàn fallant molt últimament i no rebem bé les imatges. Podriem reparar les imatges per tal
-de tornar a tenir les imatges per tal de tenir imatges los més semblants al que esperem? Per provar el vostre model
-generatiu, us hem deixat el dataset **A3**, no obstant això, pel seu entrenament podeu utilitzar els altres datasets.
+Ostres! Les nostres càmares estàn fallant molt últimament i no rebem bé les imatges. Podriem reparar les imatges i
+tornar a tenir-les lo més semblant al que esperem? Per provar el vostre model generatiu, us hem deixat el dataset **A3**
+, no obstant això, pel seu entrenament podeu utilitzar els altres datasets.
 
 <img src="imgs\generative.PNG" height="300px"/>
 
