@@ -4,7 +4,7 @@
 
 <h1 align="center">
 
-   🚀 From 0 to Data Scientist 🔬
+🚀 From 0 to Data Scientist 🔬
 
 </h1>
 
@@ -37,7 +37,7 @@ estigueu atents!
 
 ### Recursos 📦
 
-Comptareu amb tres datasets, el dataset **A1**, **A2**, **A3** i  **B**. Encara que les imatges dels datasets estàn
+Comptareu amb uns quants datasets, **A1**, **A2**, **A3** i  **B**. Encara que les imatges dels datasets estàn
 relacionades, veureu que tenen diferents característiques que comportarà un canvi de dificultat a l'hora de complir les
 misisons. Us podeu començar a descarregar els datasets per [aquí](README.md) o podeu demanar un USB amb les dades a
 Paula Gallucci 👩‍🔬 o Oriol Alàs 👨‍🔬.
@@ -50,28 +50,48 @@ un servei gratuït de GPUs.
 
 ### ☀️ Missió groga
 
-Amb el dataset **A1**, volem que observeu les teles i realitzeu un algoritme per etiquetar les dades que teniu segons el
-patró 📁 que segueixen. Totes les teles que teniu a continuació tenen un patró diferent:
+La idea d'aquesta missió es orientar-la amb l'etiquetatge de dades. Part de la feina d'un data scientist és tenir dades
+amb la major informació possible per detectar patrons, problemes, estadístiques... Amb el dataset **A1**, volem que
+observeu les teles i realitzeu un algoritme per etiquetar les dades que teniu segons el patró 📁 que segueixen. Totes
+les teles que teniu a continuació tenen un patró diferent:
 
-<img src="imgs\A\c1r1e0n1.png" height="100px"/><img src="imgs\A\c1r3e0n1.png" height="100px"/><img src="imgs\A\c2r2e0n1.png" height="100px"/><img src="imgs\A\c2r3e0n1.png" height="100px"/><img src="imgs\A\c3r1e0n1.png" height="100px"/><img src="imgs\A\c3r3e0n1.png" height="100px"/>
+<img src="imgs\A\c1r1e0n1.png" height="100px"/><img src="imgs\A\c1r3e0n1.png" height="100px"/><img src="imgs\A\c2r3e0n1.png" height="100px"/><img src="imgs\A\c3r1e0n1.png" height="100px"/><img src="imgs\A\c3r3e0n1.png" height="100px"/>
 
 Què ens heu de donar? Un **document** (en Markdown, pdf, docx...) enumerant els diferents tipus de tela i un  **csv**
 amb el nom del fitxer de la imatge i el tipus de patró en qüestió.
 
 ### 🍓 Missió vermella
 
-Amb el dataset **A1** volem que observeu les teles i realitzeu un algoritme per etiquetar les dades segons l'error.
-Podeu fer servir el *.csv* que hi ha dins de la carpeta, on trobareu una categoria que explica amb llenguatge natural
-una mica quin error és. Es voldrà obviar si l'error de l'imatge és a causa de la càmara, és a dir, no es tindran en
-compte aquestes imatges.
+La idea d'aquesta missió es orientar-la amb l'etiquetatge de dades. Part de la feina d'un data scientist és tenir dades
+amb la major informació possible per detectar patrons, problemes, estadístiques... Amb el dataset **A1** volem que
+observeu les teles i realitzeu un algoritme per etiquetar les dades segons l'error. Podeu fer servir el *.csv* que hi ha
+dins de la carpeta, on trobareu una categoria que explica amb llenguatge natural una mica quin error és. Es voldrà
+obviar si l'error de l'imatge és a causa de la càmara, és a dir, no es tindran en compte aquestes imatges.
+
+Aquí teniu alguns exemples d'errors:
+
+<img src="imgs\BAD\A\c1r1e2n3.png" height="100px"/><img src="imgs\BAD\A\c1r1e4n1.png" height="100px"/><img src="imgs\BAD\A\c1r3e3n4.png" height="100px"/><img src="imgs\BAD\A\c2r2e2n1.png" height="100px"/>
 
 Guanyarà l'algoritme que més imatges pugui etiquetar correctament.
 
+Voldrem classificar els errors de la següent manera:
+
+- Forats
+- Marques verticals
+- Marques horitzontals
+- Taques d'oli
+- Plegaments
+- Franja de colors
+- Altres irregularitats
+
+Què ens heu de donar? Un **document** (en Markdown, pdf, docx...) enumerant els diferents errors i un  **csv**
+amb el nom del fitxer de la imatge i el tipus d'error en qüestió.
+
 ### 🍊 Missió taronja
 
-Volem que implementeu un model o algoritme que permeti classificar els errors del dataset **A2**. Ens agradaria que
-mostressiu alguna gràfica de l'entrenament del model (en cas de fer ML) o mètriques qualitatives (accuracy, recall,
-f1...) i quantitatives (matrius de confusió, ROC curve...).
+Volem que implementeu un model o algoritme que permeti classificar del dataset **A2** si aquella imatge hi ha error o
+no. Ens agradaria que mostressiu alguna gràfica de l'entrenament del model (en cas de fer ML) o mètriques qualitatives (
+accuracy, recall, f1...) i quantitatives (matrius de confusió, ROC curve...).
 
 ### 🍆 Missió lila
 
@@ -88,19 +108,29 @@ f1...) i quantitatives (matrius de confusió, ROC curve...).
 ### 🏴 Missió negra
 
 Està popularitzat dir que no sabem el comportament de les xarxes neuronals... És això cert? Apliqueu tècniques de
-*eXplainable Artificial Intelligence* a un model que teniu penjat al sharepoint... A veure si és cert!
+*eXplainable Artificial Intelligence* a un model que teniu penjat al sharepoint... Utilitzeu imatges del dataset **B**.
+Amb 2 o 3 imatges explicant el que passa en tenim suficient 👌
+
+Us deixem aquí uns recursos 📦 que de segur us seran ben útils!
+
+- [SHAP](https://shap.readthedocs.io/en/latest/index.html)
+- [Captum](https://captum.ai/)
+- [Interpretable Machine Learning](https://christophm.github.io/interpretable-ml-book/)
 
 ### 🌺 Missió rosa
 
 Ostres! Les nostres càmares estàn fallant molt últimament i no rebem bé les imatges. Podriem reparar les imatges per tal
 de tornar a tenir les imatges per tal de tenir imatges los més semblants al que esperem? Per provar el vostre model
 generatiu, us hem deixat el dataset **A3**, no obstant això, pel seu entrenament podeu utilitzar els altres datasets.
-Molta sort!
+
+<img src="imgs\generative.PNG" height="300px"/>
+
+No saps quins models podrien anar bé? Vine a preguntar-nos!
 
 ## La puntuació 👀
 
-Tindrem en compte l'originalitat de les sol·lucions i de la presentació, el percentatge de missions complertes, l'eficàcia,
-l'eficiència, l'excelència i l'èxit en les sol·lucions, el treball en equip, la comunicació i volem saber el per què heu
-de ser l'equip guanyador.
+Tindrem en compte l'originalitat de les sol·lucions i de la presentació, el percentatge de missions complertes,
+l'eficàcia, l'eficiència, l'excelència i l'èxit en les sol·lucions, el treball en equip, la comunicació i volem saber el
+per què heu de ser l'equip guanyador.
 
 Molta sort!
