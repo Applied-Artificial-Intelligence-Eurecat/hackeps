@@ -1,9 +1,14 @@
-<p align="right">Català | Español | English</p>
-<h1 align="center">
-   🚀 From 0 to Data Scientist 🔬
+<p align="right"><a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README.md">Català</a> | <a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README-es.md">Español</a> | <a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README-en.md">English</a></p>
 
 -----
+
+<h1 align="center">
+
+   🚀 From 0 to Data Scientist 🔬
+
 </h1>
+
+-----
 
 ## El repte 👨‍🔬👩‍🔬
 
@@ -48,12 +53,7 @@ un servei gratuït de GPUs.
 Amb el dataset **A1**, volem que observeu les teles i realitzeu un algoritme per etiquetar les dades que teniu segons el
 patró 📁 que segueixen. Totes les teles que teniu a continuació tenen un patró diferent:
 
-<img src="imgs\A\c1r1e0n1.png" height="100px"/>
-<img src="imgs\A\c1r3e0n1.png" height="100px"/>
-<img src="imgs\A\c2r2e0n1.png" height="100px"/>
-<img src="imgs\A\c2r3e0n1.png" height="100px"/>
-<img src="imgs\A\c3r1e0n1.png" height="100px"/>
-<img src="imgs\A\c3r3e0n1.png" height="100px"/>
+<img src="imgs\A\c1r1e0n1.png" height="100px"/><img src="imgs\A\c1r3e0n1.png" height="100px"/><img src="imgs\A\c2r2e0n1.png" height="100px"/><img src="imgs\A\c2r3e0n1.png" height="100px"/><img src="imgs\A\c3r1e0n1.png" height="100px"/><img src="imgs\A\c3r3e0n1.png" height="100px"/>
 
 Què ens heu de donar? Un **document** (en Markdown, pdf, docx...) enumerant els diferents tipus de tela i un  **csv**
 amb el nom del fitxer de la imatge i el tipus de patró en qüestió.
@@ -99,9 +99,8 @@ Molta sort!
 
 ## La puntuació 👀
 
-Tindrem en compte l'originalitat de les sol·lucions i la presentació, el percentatge de missions complertes, l'eficàcia,
-l'eficiència, l'excelència i l'èxit en les sol·lucions, el treball en equip, la comunicació i argumentant el per què heu
+Tindrem en compte l'originalitat de les sol·lucions i de la presentació, el percentatge de missions complertes, l'eficàcia,
+l'eficiència, l'excelència i l'èxit en les sol·lucions, el treball en equip, la comunicació i volem saber el per què heu
 de ser l'equip guanyador.
-
 
 Molta sort!
