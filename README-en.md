@@ -65,8 +65,9 @@ Regarding the display of the models:
 
 You will have a few datasets, **A1**, **A2**, **A3** and **B**. Although the images of the datasets are related, you
 will see that they have different characteristics that will lead to a change in difficulty when fulfilling them missions
-You can start downloading the datasets by [here](README.md) or you can ask for a USB with the data to Paula Gallucci
-👩‍🔬 or Oriol Alàs 👨‍🔬.
+You can start downloading the datasets
+by [here](https://eurecatcloud-my.sharepoint.com/:f:/g/personal/oriol_alas_eurecat_org/EuSA9ovRMklJidz69WmJpgwBQ2d1A-eddvg7EUukUTpnQA?e=D39Ppz)
+or you can ask for a USB with the data to Paula Gallucci 👩‍🔬 or Oriol Alàs 👨‍🔬.
 
 In case you use Deep Learning models, we understand that resources at a hackathon are rather limited. However, you can
 count on free resources like [Kaggle notebooks](https://www.kaggle.com/docs/notebooks)
@@ -122,21 +123,21 @@ accuracy, recall, f1...) and quantitative (confusion matrices, ROC curve...).
 
 ### 🍆 Purple mission
 
-We want you to implement a model or algorithm that allows to classify the detected patterns of the yellow mission ️☀️ in the
-dataset **A1**. We would like you to show some graphs of the model training (if doing ML) or metrics
-qualitative (accuracy, recall, f1...) and quantitative (confusion matrices, ROC curve...).
+We want you to implement a model or algorithm that allows to classify the detected patterns of the yellow mission ️☀️ in
+the dataset **A1**. We would like you to show some graphs of the model training (if doing ML) or metrics qualitative (
+accuracy, recall, f1...) and quantitative (confusion matrices, ROC curve...).
 
 ### 🍏 Green mission
 
 We want you to implement a model or algorithm that allows to classify the errors of dataset **B**. We would like that
-show some graph of the model training (in case of doing ML) or qualitative metrics (accuracy, recall,
-f1...) and quantitative (confusion matrices, ROC curve...).
+show some graph of the model training (in case of doing ML) or qualitative metrics (accuracy, recall, f1...) and
+quantitative (confusion matrices, ROC curve...).
 
 ### 🏴 Black mission
 
 It is popular to say that we do not know the behavior of neural networks... Is this true? Apply techniques of
-*eXplainable Artificial Intelligence* to a model you have uploaded to sharepoint... Use images from dataset **B**.
-With 2 or 3 images explaining what happens we have enough 👌
+*eXplainable Artificial Intelligence* to a model you have [here](http://84.88.176.103:10003/docs)... Use images from
+dataset **B**. With 2 or 3 images explaining what happens we have enough 👌
 
 Here are some resources 📦 that will surely be very useful!
 
@@ -157,7 +158,7 @@ Don't know which models might go well? Come and ask us!
 ## The score 👀
 
 We will take into account the originality of the solutions and the presentation, the percentage of missions completed,
-effectiveness, efficiency, excellence and success in solutions, teamwork, communication and we want to know the
-why you must be the winning team.
+effectiveness, efficiency, excellence and success in solutions, teamwork, communication and we want to know the why you
+must be the winning team.
 
 Good Luck!

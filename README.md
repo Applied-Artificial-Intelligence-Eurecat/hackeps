@@ -65,8 +65,9 @@ Pel que fa a la visualització dels models:
 
 Comptareu amb uns quants datasets, **A1**, **A2**, **A3** i  **B**. Encara que les imatges dels datasets estàn
 relacionades, veureu que tenen diferents característiques que comportarà un canvi de dificultat a l'hora de complir les
-misisons. Us podeu començar a descarregar els datasets per [aquí](README.md) o podeu demanar un USB amb les dades a
-Paula Gallucci 👩‍🔬 o Oriol Alàs 👨‍🔬.
+misisons. Us podeu començar a descarregar els datasets
+per [aquí](https://eurecatcloud-my.sharepoint.com/:f:/g/personal/oriol_alas_eurecat_org/EuSA9ovRMklJidz69WmJpgwBQ2d1A-eddvg7EUukUTpnQA?e=D39Ppz)
+o podeu demanar un USB amb les dades a Paula Gallucci 👩‍🔬 o Oriol Alàs 👨‍🔬.
 
 En el cas que feu models de Deep Learning, entenem que els recursos a una hackathon són més aviat limitats. Igualment,
 compteu amb recursos gratuïts com les [notebooks de Kaggle](https://www.kaggle.com/docs/notebooks)
@@ -134,8 +135,8 @@ f1...) i quantitatives (matrius de confusió, ROC curve...).
 ### 🏴 Missió negra
 
 Està popularitzat dir que no sabem el comportament de les xarxes neuronals... És això cert? Apliqueu tècniques de
-*eXplainable Artificial Intelligence* a un model que teniu penjat al sharepoint... Utilitzeu imatges del dataset **B**.
-Amb 2 o 3 imatges explicant el que passa en tenim suficient 👌
+*eXplainable Artificial Intelligence* a un model que teniu [aquí](http://84.88.176.103:10003/docs)... Utilitzeu imatges
+del dataset **B**. Amb 2 o 3 imatges explicant el que passa en tenim suficient 👌
 
 Us deixem aquí uns recursos 📦 que de segur us seran ben útils!
 

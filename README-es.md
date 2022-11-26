@@ -65,8 +65,9 @@ En cuanto a la visualización de los modelos:
 
 Tendrás a tu disposición algunos datasets, **A1**, **A2**, **A3** y **B**. Aunque las imágenes de los conjuntos de datos
 están relacionadas, verás que tienen diferentes características que darán lugar a un cambio de dificultad a la hora de
-cumplir las misiones. Puedes comenzar a descargar los conjuntos de datos [aquí](README.md) o puedes solicitar un USB con
-los datos a Paula Gallucci 👩‍🔬 o Oriol Alàs 👨‍🔬.
+cumplir las misiones. Puedes comenzar a descargar los conjuntos de
+datos [aquí](https://eurecatcloud-my.sharepoint.com/:f:/g/personal/oriol_alas_eurecat_org/EuSA9ovRMklJidz69WmJpgwBQ2d1A-eddvg7EUukUTpnQA?e=D39Ppz)
+o puedes solicitar un USB con los datos a Paula Gallucci 👩‍🔬 o Oriol Alàs 👨‍🔬.
 
 En caso de que utilices modelos de aprendizaje profundo, entendemos que los recursos en un hackatón son bastante
 limitados. Sin embargo, puedes contar con recursos gratuitos
@@ -123,21 +124,21 @@ precisión, recuperación, f1...) y cuantitativos (matrices de confusión, curva
 
 ### 🍆 Misión morada
 
-Queremos que implementes un modelo o algoritmo que permita clasificar los patrones detectados de la misión amarilla ️☀️ en el
-conjunto de datos **A1**. Nos gustaría que muestre algunos gráficos del entrenamiento del modelo (si está haciendo ML) o métricas
-cualitativos (precisión, recuperación, f1...) y cuantitativos (matrices de confusión, curva ROC...).
+Queremos que implementes un modelo o algoritmo que permita clasificar los patrones detectados de la misión amarilla ️☀️
+en el conjunto de datos **A1**. Nos gustaría que muestre algunos gráficos del entrenamiento del modelo (si está haciendo
+ML) o métricas cualitativos (precisión, recuperación, f1...) y cuantitativos (matrices de confusión, curva ROC...).
 
 ### 🍏 Misión verde
 
-Queremos que implementes un modelo o algoritmo que permita clasificar los errores del conjunto de datos **B**. nos gustaria eso
-mostrar algún gráfico del entrenamiento del modelo (en caso de hacer ML) o métricas cualitativas (precisión, recuperación,
-f1...) y cuantitativos (matrices de confusión, curva ROC...).
+Queremos que implementes un modelo o algoritmo que permita clasificar los errores del conjunto de datos **B**. nos
+gustaria eso mostrar algún gráfico del entrenamiento del modelo (en caso de hacer ML) o métricas cualitativas (
+precisión, recuperación, f1...) y cuantitativos (matrices de confusión, curva ROC...).
 
 ### 🏴 Misión negra
 
 Es popular decir que no conocemos el comportamiento de las redes neuronales... ¿Es esto cierto? Aplica técnicas de
-*Inteligencia artificial explicable* a un modelo que hemos subido al Sharepoint... Utiliza imágenes del conjunto de datos **B**.
-Con 2 o 3 imágenes explicando lo que pasa ya tenemos suficiente 👌
+*Inteligencia artificial explicable* a un modelo que tenéis [aquí](http://84.88.176.103:10003/docs)... Utiliza imágenes
+del conjunto de datos **B**. Con 2 o 3 imágenes explicando lo que pasa ya tenemos suficiente 👌
 
 ¡Aquí tienes algunos recursos 📦 que seguro te serán de mucha utilidad!
 
@@ -147,8 +148,9 @@ Con 2 o 3 imágenes explicando lo que pasa ya tenemos suficiente 👌
 
 ### 🌺 Misión rosa
 
-¡DIOS MÍO! Nuestras cámaras están fallando mucho últimamente y no estamos sacando las fotos bien. Podríamos reparar las imágenes y
-volver a tenerlos lo más parecido a lo que esperamos? Para probar tu modelo generativo, te hemos dejado el dataset **A3**
+¡DIOS MÍO! Nuestras cámaras están fallando mucho últimamente y no estamos sacando las fotos bien. Podríamos reparar las
+imágenes y volver a tenerlos lo más parecido a lo que esperamos? Para probar tu modelo generativo, te hemos dejado el
+dataset **A3**
 , sin embargo, para el entrenamiento puede usar los otros conjuntos de datos.
 
 <img src="imgs\generativo.PNG" height="300px"/>
@@ -158,7 +160,7 @@ volver a tenerlos lo más parecido a lo que esperamos? Para probar tu modelo gen
 ## La puntuación 👀
 
 Tendremos en cuenta la originalidad de las soluciones y la presentación, el porcentaje de misiones completadas,
-eficacia, eficiencia, excelencia y éxito en las soluciones, trabajo en equipo, comunicación y queremos conocer las
-por qué usted debe ser el equipo ganador.
+eficacia, eficiencia, excelencia y éxito en las soluciones, trabajo en equipo, comunicación y queremos conocer las por
+qué usted debe ser el equipo ganador.
 
 ¡Buena suerte!
