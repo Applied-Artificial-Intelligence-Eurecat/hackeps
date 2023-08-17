@@ -23,7 +23,7 @@ El repte està dividit en missions, tractant cada missió una disciplina diferen
 
 Com que estem parlant d’un hort, hem relacionat cada missió amb una planta, a pesar de que no necessàriament es trobin totes a l‘hort. 
 Us recomanem python com a llenguatge de programació, i en cas de fer missions on s’hagi de visualitzar dades, recomanem també l’ús de [notebooks](https://jupyter.org/). Aquestes son les llibreries més utilitzades per a dur a terme les tasques que es presenten en les missions.
-per la conexió al broker mqtt
+Per la conexió al broker mqtt
 - [paho.mqtt](https://pypi.org/project/paho-mqtt/)
 Per a tractar dades
 - [pandas](https://pandas.pydata.org/)
