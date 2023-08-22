@@ -23,9 +23,13 @@ El repte està dividit en missions, tractant cada missió una disciplina diferen
 
 Com que estem parlant d’un hort, hem relacionat cada missió amb una planta, a pesar de que no necessàriament es trobin totes a l‘hort. 
 Us recomanem python com a llenguatge de programació, i en cas de fer missions on s’hagi de visualitzar dades, recomanem també l’ús de [notebooks](https://jupyter.org/). Aquestes son les llibreries més utilitzades per a dur a terme les tasques que es presenten en les missions.
+
 Per la conexió al broker mqtt
+
 - [paho.mqtt](https://pypi.org/project/paho-mqtt/)
+  
 Per a tractar dades
+
 - [pandas](https://pandas.pydata.org/)
 - [numpy](https://numpy.org/)
 - [Pillow](https://pypi.org/project/Pillow/)
@@ -48,26 +52,30 @@ Pel que fa a la visualització dels models:
 
 ### Recursos 📦
 L’única missió obligatoria en aquest repte és la primera, ja que no disposeu de dades inicialmente, a part de:
-url:
+
+url: **HOST i PORT**
+
 llista de topics:
-- /huerto/plantas
-- /huerto/incompleto
-- /huerto/team
+- huerto/plantas
+- huerto/team/_id_equipo_
+  
 Per tant, abans de poder començar amb cap altra missió, haureu de completar la missió margarita 🌼
 
 ### 🌼 MISSIÓ MARGARITA 
-Abans de poder començar cap tasca, cal obtenir dades, i per a no centrar-nos únicament en les tasques d’un data scientist, aquestes dades s’han d’obtenir a través d’un broker mqtt.
-Durant mesos, aquest bróker ha estat rebent dades de les plantes d’un hort al topic /huerto/plantas. Volem que obtingueu aquestes dades connectant-vos hi amb el link proporcionat anteriorment. Demaneu a la taula d’eurecat que us donin una ID per a poder fer la connexió, i d’aquesta manera també tindreu un equip assignat per les pròximes missions.
+Abans de poder començar cap tasca, cal obtenir dades, i per a no centrar-nos únicament en la feina d’un data scientist, aquestes dades s’han d’obtenir a través d’un broker mqtt, protocol que s'utilitza per a IoT.
+
+A les nostres instal·lacions tenim un hort enviant dades a temps real al topic huerto/plantas. Volem que obtingueu aquestes dades connectant-vos-hi amb el link proporcionat anteriorment. Demaneu a la taula d’eurecat que us donin un usuari i contrasenya per a poder fer la connexió, i d’aquesta manera també tindreu un equip assignat per les pròximes missions.
 
 ### 🌷 MISSIÓ TULIPA
-Un cop ja teniu les dades, podeu afegir les vostres pròpies dins del dataset amb les plantes que trobareu a la taula d’eurecat. Demostreu que heu complert la missió margarita, i us donaran la planta i tot el hardware necessari per a poder obtenir les vostres pròpies dades. Tenint el sistema de gestió de dades establert i la possibilitat de crear noves dades, hi ha moltes aplicacions possibles d’IoT 😉. Envieu la informació de la vostra planta al tòpic del vostre equip: /team{Lletra del vostre equip}
+Un cop ja teniu les dades, podeu transmetre les vostres pròpies al broker amb les plantes que trobareu a la taula d’eurecat. Demostreu que heu complert la missió margarita, i us donaran la planta i tot el hardware necessari per a poder obtenir les vostres pròpies dades. Tenint el sistema de gestió de dades establert i la possibilitat de crear noves dades, hi ha moltes aplicacions possibles d’IoT 😉. Envieu la informació de la vostra planta al tòpic del vostre equip: huerto/team/{Lletra del vostre equip}
 
 ### 🎋 MISSIÓ BAMBÚ
-Per culpa d’algun becari >:(, les dades que vam guardar inicialment no estan completes, ja que falta el tipus de planta del que es tracta cada entrada. Per a no perdre tot aquest progrés, vam guardar aquestes dades en un topic diferent: /huerto/incompleto
-Donat que el comportament de les plantes és el mateix que el de les que sí que tenen l’espècie especificada, utilitza les dades que ja has obtingut per a predir quin tipus de planta es cadascuna del topic incomplert. 
+Per culpa d’algun becari >:(, les dades que vam enregistrar inicialment no estan completes, ja que falta el tipus de planta del que es tracta cada entrada. Per a no perdre tot aquest progrés, vam guardar aquestes dades en un dataset **TBD: com donar el _dataset_**.
+
+Donat que el comportament de les plantes és el mateix que el de les que sí que tenen l’espècie especificada, utilitza les dades que ja has obtingut per a predir quin tipus de planta es cadascuna del dataset incomplert. 
 
 ### 🥑 MISSIÓ ALBOCAT
-Les plantes es moriran de set si et passes tota l’estona programant! Com que estar pendents de les plantes i regar-les regularment no sembla ser una opció, us hem donat també una bomba d’aigua per a que pugueu automatitzar-ho. Amb l’historial d’humitat de l’aigua que teniu, automatitzeu el reg per a la vostra planta adequadament.
+Les plantes es moriran de set si et passes tota l’estona programant! Com que estar pendents de les plantes i regar-les regularment no sembla ser una opció, us hem donat també una bomba d’aigua per a que pugueu automatitzar-ho. Amb la informació d’humitat de les plantes que teniu, automatitzeu el reg per a la vostra planta adequadament.
 
 ### 🍑 MISSIÓ PRÈSSEC
 TODO: no se si fer missió de front o deixar-ho obert
