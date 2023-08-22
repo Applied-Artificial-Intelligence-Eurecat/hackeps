@@ -23,7 +23,7 @@ Per a familiaritzar-nos amb les plantes per a quan hàgim d'anar a plantar tomà
 - 🥑 MISSIÓ ALBOCAT
 - 🍑 MISSIÓ PRÈSSEC
 
-A excepció de la `🌼 MISSIÓ MARGARITA`, aquestes missions no són necessàriament seqüencials: podeu fer-les de manera paral·lela entre els companys, o anar saltant d'una altra en funció de la inspiració... Fins i tot podeu no fer algunes i inventar-vos unes altres. La missió margarita **ES OBLIGATORIA**.
+A excepció de la `🌼 MISSIÓ MARGARITA`, aquestes missions no són necessàriament seqüencials: podeu fer-les de manera paral·lela entre els companys, o anar saltant d'una altra en funció de la inspiració... Fins i tot podeu no fer algunes i inventar-vos unes altres. La `🌼 MISSIÓ MARGARITA` **ES OBLIGATORIA**.
 
 
 ![](https://media.tenor.com/aeV80XD4CSgAAAAd/guidlines-pirates-of-the-caribbean.gif)
