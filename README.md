@@ -65,14 +65,15 @@ TODO: no se si fer missió de front o deixar-ho obert
 ### Recursos 📦
 Inicialment dispondreu d'accés a un Broker MQTT:
 > IP: 84.88.76.18
-
+>
 > Port: 1883
-
+>
 > Usuari i contrasenya: _Vine a preguntar!_
 
 Topics MQTT:
-- hort/plantes
-- hort/team/{Nom assignat a l'equip}
+> `hort/plantes`
+>
+> `hort/team/_{Nom assignat a l'equip}_`
 
 Una vegada avançada la missió margarita, podreu solicitar el _Ultimate SensorPlanta Kit 2023_ al stant, el cual constara de:
 1. 1x ESP3288
