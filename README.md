@@ -80,7 +80,7 @@ Per la conexió al broker MQTT:
 
 Per el desenvolupament del Microcontrolador:
 - [Arduino IDE](https://www.arduino.cc/en/software)
-- [ESP8266 Datasheet (Summary)]()
+- [ESP8266 Datasheet (Summary)](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/documentation/NodeMCU%20Documentation.pdf)
 - [ESP8266 Technical Reference](https://www.espressif.com/sites/default/files/documentation/esp8266-technical_reference_en.pdf) 
 
 Per a tractar dades
