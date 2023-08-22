@@ -55,7 +55,9 @@ TODO: no se si fer missió de front o deixar-ho obert
 ### Recursos 📦
 Inicialment dispondreu d'accés a un Broker MQTT:
 > IP: 84.88.76.18
+
 > Port: 1883
+
 > Usuari i contrasenya: _Vine a preguntar!_
 
 Topics MQTT:
