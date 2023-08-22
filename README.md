@@ -74,11 +74,13 @@ Una vegada avançada la missió margarita, podreu solicitar el _Ultimate Definit
 8. Diversos sensors i cables   
 
 ### Recomanacions
-Us recomanem python com a llenguatge de programació, i en cas de fer missions on s’hagi de visualitzar dades, recomanem també l’ús de [notebooks](https://jupyter.org/). Aquestes son algunes biblioteques (**LIBRARY != LLIBRERÍA**) que podrieu utilitzar per a dur a terme les tasques que es presenten en les missions.
+Us recomanem que feu servir el llenguatge de programació que estigueu més cómodes. Per programar el microcontrolador, podreu fer servir C, C++, Micro-Python, Lua o JavaScript com a llenguatge. Per la visualització de dades, podeu fer servir python, juntament amb l'utilitzacio de [notebooks](https://jupyter.org/).
+
+Aquestes son algunes biblioteques (**LIBRARY != LLIBRERÍA**) i eines que podrieu utilitzar per a dur a terme les tasques que es presenten en les missions:
 
 Per la conexió al broker MQTT:
 - [MQTTX](https://mqttx.app/)
-- [Eclipse PAHO](https://eclipse.dev/paho/)
+- [Eclipse PAHO (biblioteca MQTT per molts llenguatges populars)](https://eclipse.dev/paho/)
 
 Per el desenvolupament del Microcontrolador:
 - [Arduino IDE](https://www.arduino.cc/en/software)
@@ -86,7 +88,6 @@ Per el desenvolupament del Microcontrolador:
 - [ESP8266 Technical Reference](https://www.espressif.com/sites/default/files/documentation/esp8266-technical_reference_en.pdf) 
 
 Per a tractar dades
-
 - [pandas](https://pandas.pydata.org/)
 - [numpy](https://numpy.org/)
 - [Pillow](https://pypi.org/project/Pillow/)
