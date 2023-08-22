@@ -10,18 +10,19 @@
 
 -----
 
-## El repte 👨‍🔬👩‍🔬
+## El repte 👨‍🌾👩‍🌾
 
 Aquest any, apostem per un problema molt més ampli que abarqui no només la part de data scientist de la unitat d'Applied Artificial Intelligence, sinó que també requereixi experimentar altres camps com pot ser TODO
 
 
-## Les missions 🎨
+## Les missions 🍅
 Per a familiaritzar-nos amb les plantes per a quan hàgim d'anar a plantar tomàquets, hem fundat el Departament Vegetal d'AAI i definit un pla d'execució format per cinc missions:
-- 🌼 Missió Margarita 
-- 🌷 Missió Tulipa
-- 🎋 Missió Bambú
-- 🥑 Missió Alvocat
-- 🍑 Missió Prèssec
+
+- 🌼 **Missió Margarita**
+- 🌷 **Missió Tulipa**
+- 🎋 **Missió Bambú**
+- 🥑 **Missió Alvocat**
+- 🍑 **Missió Prèssec**
 
 A excepció de la `🌼 MISSIÓ MARGARITA`, aquestes missions no són necessàriament seqüencials: podeu fer-les de manera paral·lela entre els companys, o anar saltant d'una altra en funció de la inspiració... Fins i tot podeu no fer algunes i inventar-vos unes altres. La `🌼 MISSIÓ MARGARITA` **ES OBLIGATORIA**.
 
