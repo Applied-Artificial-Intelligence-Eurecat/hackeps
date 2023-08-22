@@ -77,6 +77,7 @@ Topics MQTT:
 
 Una vegada avançada la missió margarita, podreu solicitar el _Ultimate SensorPlanta Kit 2023_ al stant, el cual constara de:
 |    **ESP3288**   	|      **Cable MicroUSB**     	|           **Planta**          	|
+|:----------------:	|:---------------------------:	|:-----------------------------:	|
 |    **Diodes**    	|        **Protoboard**       	|       **Bomba d'aigüa**       	|
 | **Resistències** 	| **Convertidor de Voltatge** 	| **Diversos sensors i cables** 	|
 
