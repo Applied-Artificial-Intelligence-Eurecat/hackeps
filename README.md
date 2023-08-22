@@ -16,15 +16,14 @@ Aquest any, apostem per un problema molt més ampli que abarqui no només la par
 
 
 ## Les missions 🎨
-Per a familiaritzar-nos amb les plantes per a quan hàgim d'anar a plantar tomàquets, hem assignat una planta a cadascuna de les missions proposades:
-- 🌼 MISSIÓ MARGARITA 
-- 🌷 MISSIÓ TULIPA
-- 🎋 MISSIÓ BAMBÚ
-- 🥑 MISSIÓ ALBOCAT
-- 🍑 MISSIÓ PRÈSSEC
+Per a familiaritzar-nos amb les plantes per a quan hàgim d'anar a plantar tomàquets, hem fundat el Departament Vegetal d'AAI i definit un pla d'execució format per cinc missions:
+- 🌼 Missió Margarita 
+- 🌷 Missió Tulipa
+- 🎋 Missió Bambú
+- 🥑 Missió Alvocat
+- 🍑 Missió Prèssec
 
 A excepció de la `🌼 MISSIÓ MARGARITA`, aquestes missions no són necessàriament seqüencials: podeu fer-les de manera paral·lela entre els companys, o anar saltant d'una altra en funció de la inspiració... Fins i tot podeu no fer algunes i inventar-vos unes altres. La `🌼 MISSIÓ MARGARITA` **ES OBLIGATORIA**.
-
 
 ![](https://media.tenor.com/aeV80XD4CSgAAAAd/guidlines-pirates-of-the-caribbean.gif)
 
@@ -32,20 +31,28 @@ No patiu! 🥴 Sabem que conteu només de 24h… No valorem exclusivament el nom
 
 
 ### 🌼 MISSIÓ MARGARITA 
-Abans de poder començar cap tasca, cal obtenir dades, i per a no centrar-nos únicament en la feina d’un data scientist, aquestes dades s’han d’obtenir a través d’un broker mqtt, protocol que s'utilitza per a IoT.
+Abans de poder començar cap tasca, cal obtenir dades. 
 
-A les nostres instal·lacions tenim un hort enviant dades a temps real al topic `hort/plantes`. Volem que obtingueu aquestes dades connectant-vos-hi amb el link proporcionat anteriorment. Demaneu a la taula d’eurecat que us donin un usuari i contrasenya per a poder fer la connexió, i d’aquesta manera també tindreu un equip assignat per les pròximes missions.
+A les nostres instal·lacions tenim un hort enviant dades a un servidor d'Eurecat mitjançant el procol MQTT a temps real. En aquest servidor es trova un broker Mosquitto: demaneu a la taula d’eurecat que us donin un usuari i contrasenya per a poder fer la connexió i escoltar els missatges que transmeten les plantes cap al topic `hort/plantes`
+
+El Departament Vegetal necessita poder guardar les dades d'alguna forma per la posterior visualització i anàlisis.
 
 ### 🌷 MISSIÓ TULIPA
-Un cop ja teniu les dades, podeu transmetre les vostres pròpies al broker amb les plantes que trobareu a la taula d’eurecat. Demostreu que heu complert la missió margarita, i us donaran la planta i tot el hardware necessari per a poder obtenir les vostres pròpies dades. Tenint el sistema de gestió de dades establert i la possibilitat de crear noves dades, hi ha moltes aplicacions possibles d’IoT 😉. Envieu la informació de la vostra planta al tòpic del vostre equip: `hort/team/{Nom assignat a l'equip}`
+Un cop disposeu d'un sistema per guardar les dades a temps real, soliciteu al Departament Vegetal d'AAI d'Eurecat el _Ultimate SensorPlanta Kit 2023_.
+
+Aquest kit conté el material necesari per poder conectar una nova planta a l'hort digital i enviar les dades de la planta al topic `/hort/team/{nom assignat al equip}`
+
+Envieu les dades disponibles de la nova planta al servidor i enregistreu-les juntament amb la resta de dades de l'hort.
 
 ### 🎋 MISSIÓ BAMBÚ
-Per culpa d’algun becari >:(, les dades que vam enregistrar inicialment no estan completes, ja que falta el tipus de planta del que es tracta cada entrada. Per a no perdre tot aquest progrés, vam guardar aquestes dades en un dataset **TBD: com donar el _dataset_**.
+Per culpa d’algun becari >:(, les dades que vam enregistrar inicialment no estan completes, ja que falta el tipus de planta del que es tracta cada entrada. Per a no perdre tot aquest progrés, la unitat de nyaps va guardar aquestes dades en un dataset **TBD: com donar el _dataset_**.
 
-Donat que el comportament de les plantes és el mateix que el de les que sí que tenen l’espècie especificada, utilitza les dades que ja has obtingut per a predir quin tipus de planta es cadascuna del dataset incomplert. 
+Departament Vegetal vol coneixer el tipus de planta de les dades antigues, pero només sabem que el comportament de les plantes actuals es similar al de les plantes enregistrades al dataset.
 
-### 🥑 MISSIÓ ALBOCAT
-Les plantes es moriran de set si et passes tota l’estona programant! Com que estar pendents de les plantes i regar-les regularment no sembla ser una opció, us hem donat també una bomba d’aigua per a que pugueu automatitzar-ho. Amb la informació d’humitat de les plantes que teniu, automatitzeu el reg per a la vostra planta adequadament.
+### 🥑 MISSIÓ ALVOCAT
+La obsesió per programar preocupa al Departament Vegetal, ja que les plantes es moriran de set si continua aquesta dinámica! Com que agafar una regadora i regar-les regularment no sembla ser una opció, s'ha fet entrega d'una bomba d’aigua per a que pugueu automatitzar-ho. 
+
+Afegiu la bomba d'aigua al sisema i habiliteu algun mecanisme per regar la planta.
 
 ### 🍑 MISSIÓ PRÈSSEC
 TODO: no se si fer missió de front o deixar-ho obert
@@ -64,7 +71,7 @@ Topics MQTT:
 - hort/plantes
 - hort/team/{Nom assignat a l'equip}
 
-Una vegada avançada la missió margarita, podreu solicitar el _Ultimate Definitive Kit Planta 2023_ al stant, el cual constara de:
+Una vegada avançada la missió margarita, podreu solicitar el _Ultimate SensorPlanta Kit 2023_ al stant, el cual constara de:
 1. 1x ESP3288
 2. 1x Cable MicroUSB
 4. 1x Planta
