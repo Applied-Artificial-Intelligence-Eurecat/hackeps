@@ -76,23 +76,9 @@ Topics MQTT:
 > `hort/team/{Nom assignat a l'equip}`
 
 Una vegada avançada la missió margarita, podreu solicitar el _Ultimate SensorPlanta Kit 2023_ al stant, el cual constara de:
-> 1x ESP3288
->
-> 1x Cable MicroUSB
->
-> 1x Planta
->
-> 1x Protoboard
->
-> 1x Bomba d'aigüa
->
-> 2x Diodes
->
-> 2x Resistencies
->
-> Convertidor de voltatge
-> 
-> Diversos sensors i cables   
+|    **ESP3288**   	|      **Cable MicroUSB**     	|           **Planta**          	|
+|    **Diodes**    	|        **Protoboard**       	|       **Bomba d'aigüa**       	|
+| **Resistències** 	| **Convertidor de Voltatge** 	| **Diversos sensors i cables** 	|
 
 ### Recomanacions
 Us recomanem que feu servir el llenguatge de programació que estigueu més cómodes. Per programar el microcontrolador, podreu fer servir C, C++, Micro-Python, Lua o JavaScript com a llenguatge. Per la visualització de dades, podeu fer servir python, juntament amb l'utilitzacio de [notebooks](https://jupyter.org/).
