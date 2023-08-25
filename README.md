@@ -10,7 +10,7 @@
 
 -----
 
-## El repte 👨‍🌾👩‍🌾
+# El repte 👨‍🌾👩‍🌾
 
 Aquest any, apostem per un problema molt més ampli que abarqui no només la part de data scientist de la unitat d'Applied Artificial Intelligence, sinó que també requereixi experimentar altres camps com pot ser TODO
 
@@ -106,5 +106,9 @@ Per a tractar dades
 Tindrem en compte l'originalitat de les sol·lucions i de la presentació, el percentatge de missions complertes,
 l'eficàcia, l'eficiència, l'excelència i l'èxit en les sol·lucions, el treball en equip, la comunicació i volem saber el
 per què heu de ser l'equip guanyador.
+
+### El premi 🏆
+- 800€ per el 1r Premi
+- 200€ per el 2n Premi 
 
 Molta sort!
