@@ -26,7 +26,7 @@ Per a familiaritzar-nos amb les plantes per a quan hàgim d'anar a plantar tomà
 
 A excepció de la `🌼 MISSIÓ MARGARITA`, aquestes missions no són necessàriament seqüencials: podeu fer-les de manera paral·lela entre els companys, o anar saltant d'una a una altra en funció de la vostra inspiració... Fins i tot podeu no fer algunes i inventar-vos-en d'altres. 
 
-No dubtéu en vindre a la ambaixada del Departament Vegetal d'AAI (AKA les taules de la HackEPS on es troven els representants d'Eurecat) per validar les vostres idees si teniu algún dubte sobre si entra dins de la idea general del repte.
+No dubteu en venir a l'ambaixada del Departament Vegetal d'AAI (conegut com les taules de la HackEPS, on es troben els representants d'Eurecat) per validar les vostres idees si teniu algun dubte sobre si encaixa dins de la idea general del repte.
 
 La `🌼 MISSIÓ MARGARIDA` **ÉS OBLIGATÒRIA**.
 
