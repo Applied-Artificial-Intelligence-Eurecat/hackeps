@@ -50,9 +50,11 @@ Aquest kit conté el material necessari per a poder connectar una nova planta a 
 Envieu les dades disponibles de la nova planta al servidor i enregistreu-les juntament amb la resta de dades de l'hort.
 
 ### 🎋 MISSIÓ BAMBÚ
-Per culpa d’algun becari >:(, les dades que vam enregistrar inicialment no estan completes, ja que falta el tipus de planta del que es tracta cada entrada. Per a no perdre tot aquest progrés, la unitat de nyaps va guardar aquestes dades en un dataset **TBD: com donar el _dataset_**.
+Per culpa d’algun becari >:(, les dades que vam enregistrar durant el primer dia no estan completes, ja que falta el tipus de planta del que es tracta cada entrada. Per a no perdre tot aquest progrés, la unitat de nyaps va guardar aquestes dades en un dataset **TBD: com donar el _dataset_**.
 
 Departament Vegetal vol conèixer el tipus de planta de les dades antigues, però només sabem que el comportament de les plantes actuals és similar al de les plantes enregistrades al dataset.
+
+Es possible que no tingueu encara proutes dades per a poder entrenar un model predictiu, per tant, donem també a la vostra disposició un dataset amb dades històriques captades durant una setmana, aquest cop, sense que cap becari hi fiqui la pota. 
 
 ### 🥑 MISSIÓ ALVOCAT
 L'obsessió per programar preocupa al Departament Vegetal, ja que les plantes es moriran de set si continua aquesta dinàmica! Com que agafar una regadora i regar-les regularment no sembla ser una opció, s'ha fet entrega d'una bomba d’aigua perquè pugueu automatitzar-ho. 
@@ -60,9 +62,9 @@ L'obsessió per programar preocupa al Departament Vegetal, ja que les plantes es
 Afegiu la bomba d'aigua al sistema i habiliteu algun mecanisme per a regar la planta.
 
 ### 🍑 MISSIÓ PRÉSSEC
-Interactuar amb les dades és gairebé tan important com tenir-les. El departament de desenvolupament d'interfícies atractives, col·laboradors habituals del departament vegetal de AAI, ha estat subcontractat per idear una manera de poder explotar aquestes dades, però estan més secs d'idees que una noguera al gener.
+Interactuar amb les dades és gairebé tan important com tenir-les. El departament de desenvolupament d'interfícies atractives, col·laboradors habituals del departament vegetal d'AAI, ha estat subcontractat per idear una manera de poder explotar aquestes dades, però estan més secs d'idees que una noguera al gener.
 
-Ideeu, dissenyeu i desenvolupeu eines relacionades amb el curo del hort digital, que idealment facin ús de les dades recollides en qualsevol de les altres missions.
+Ideeu, dissenyeu i desenvolupeu eines relacionades amb la cura de l'hort digital, que idealment facin ús de les dades recollides en qualsevol de les altres missions.
 
 ## Com començar?
 
