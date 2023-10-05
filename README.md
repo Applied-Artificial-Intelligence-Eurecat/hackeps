@@ -26,6 +26,8 @@ Per a familiaritzar-nos amb les plantes per a quan hàgim d'anar a plantar tomà
 
 A excepció de la `🌼 MISSIÓ MARGARITA`, aquestes missions no són necessàriament seqüencials: podeu fer-les de manera paral·lela entre els companys, o anar saltant d'una a una altra en funció de la vostra inspiració... Fins i tot podeu no fer algunes i inventar-vos-en d'altres. 
 
+No dubtéu en vindre a la ambaixada del Departament Vegetal d'AAI (AKA les taules de la HackEPS on es troven els representants d'Eurecat) per validar les vostres idees si teniu algún dubte sobre si entra dins de la idea general del repte.
+
 La `🌼 MISSIÓ MARGARIDA` **ÉS OBLIGATÒRIA**.
 
 ![](https://media.tenor.com/aeV80XD4CSgAAAAd/guidlines-pirates-of-the-caribbean.gif)
@@ -58,7 +60,9 @@ L'obsessió per programar preocupa al Departament Vegetal, ja que les plantes es
 Afegiu la bomba d'aigua al sistema i habiliteu algun mecanisme per a regar la planta.
 
 ### 🍑 MISSIÓ PRÉSSEC
-TODO: no sé si fer missió de front o deixar-ho obert
+Interactuar amb les dades és gairebé tan important com tenir-les. El departament de desenvolupament d'interfícies atractives, col·laboradors habituals del departament vegetal de AAI, ha estat subcontractat per idear una manera de poder explotar aquestes dades, però estan més secs d'idees que una noguera al gener.
+
+Ideeu, dissenyeu i desenvolupeu eines relacionades amb el curo del hort digital, que idealment facin ús de les dades recollides en qualsevol de les altres missions.
 
 ## Com començar?
 
