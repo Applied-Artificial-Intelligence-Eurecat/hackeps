@@ -38,23 +38,21 @@ No patiu! 🥴 Sabem que conteu només amb 24h… No valorem exclusivament el no
 ### 🌼 MISSIÓ MARGARIDA 
 Abans de poder començar cap tasca, cal obtenir dades. 
 
-A les nostres instal·lacions tenim un hort enviant dades a un servidor d'Eurecat mitjançant el procol MQTT a temps real. En aquest servidor es troba un broker Mosquitto. Demaneu a la taula d’eurecat que us donin un usuari i contrasenya per a poder fer la connexió i escoltar els missatges que transmeten les plantes cap al topic `hort/plantes`
+A les nostres instal·lacions tenim una primera planta enviant les dades a un servidor d'Eurecat mitjançant el procol MQTT a temps real. En aquest servidor es troba un broker Mosquitto. Demaneu a la taula d’Eurecat que us donin un usuari i contrasenya per a poder fer la connexió i escoltar els missatges que transmet la planta al topic `hackeps/eurecat`
 
 El Departament Vegetal necessita poder guardar les dades d'alguna forma per la posterior visualització i anàlisi.
 
 ### 🌷 MISSIÓ TULIPA
 Un cop disposeu d'un sistema per guardar les dades a temps real, sol·liciteu al Departament Vegetal d'AAI d'Eurecat el _Ultimate SensorPlanta Kit 2023_.
 
-Aquest kit conté el material necessari per a poder connectar una nova planta a l'hort digital i enviar les dades de la planta al topic `/hort/team/{nom assignat a l'equip}`
+Aquest kit conté el material necessari per a poder connectar una nova planta a l'hort digital i enviar les dades de la planta al topic `/hackeps/{id assignat a l'equip}`
 
 Envieu les dades disponibles de la nova planta al servidor i enregistreu-les juntament amb la resta de dades de l'hort.
 
 ### 🎋 MISSIÓ BAMBÚ
-Per culpa d’algun becari >:(, les dades que vam enregistrar durant el primer dia no estan completes, ja que falta el tipus de planta del que es tracta cada entrada. Per a no perdre tot aquest progrés, la unitat de nyaps va guardar aquestes dades en un dataset **TBD: com donar el _dataset_**.
+Per culpa d’algun becari >:(, les dades que vam enregistrar tenen alguns errors, ja que els sensors no funcionaven correctament. Per a no perdre tot aquest progrés, la unitat de nyaps va guardar aquestes dades en un dataset **TBD: com donar el _dataset_**.
 
-Departament Vegetal vol conèixer el tipus de planta de les dades antigues, però només sabem que el comportament de les plantes actuals és similar al de les plantes enregistrades al dataset.
-
-Es possible que no tingueu encara proutes dades per a poder entrenar un model predictiu, per tant, donem també a la vostra disposició un dataset amb dades històriques captades durant una setmana, aquest cop, sense que cap becari hi fiqui la pota. 
+Departament Vegetal vol solucionar aquests errors per a poder disposar d'aquest dataset.
 
 ### 🥑 MISSIÓ ALVOCAT
 L'obsessió per programar preocupa al Departament Vegetal, ja que les plantes es moriran de set si continua aquesta dinàmica! Com que agafar una regadora i regar-les regularment no sembla ser una opció, s'ha fet entrega d'una bomba d’aigua perquè pugueu automatitzar-ho. 
@@ -77,9 +75,9 @@ Inicialment disposareu d'accés a un Broker MQTT:
 > Usuari i contrasenya: _Vine a preguntar!_
 
 Topics MQTT:
-> `hort/plantes`
+> `hackeps/eurecat`
 >
-> `hort/team/{Nom assignat a l'equip}`
+> `hackeps/{Nom assignat a l'equip}`
 
 Una vegada avançada la missió margarida, podreu sol·licitar el _Ultimate SensorPlanta Kit 2023_ a la nostra taula, el qual constarà de:
 |    **ESP3288**   	|      **Cable MicroUSB**     	|           **Planta**          	|
@@ -104,6 +102,7 @@ Pel desenvolupament del Microcontrolador:
 Per a tractar dades
 - [pandas](https://pandas.pydata.org/)
 - [numpy](https://numpy.org/)
+- [statsmodels](https://www.statsmodels.org/)
 - [Pillow](https://pypi.org/project/Pillow/)
 - [matplotlib](https://pypi.org/project/matplotlib/)
 
