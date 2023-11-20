@@ -1,8 +1,10 @@
+<p align="right"><a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README.md">Català</a> | <a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README-es.md">Español</a> | <a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README-en.md">English</a></p>
+
 -----
 
 <h1 align="center">
 
-🔬 La IA ens deixarà sense treball i haurem de plantar tomàquets i criar gallines 🌱
+🔬 La IA nos dejará sin trabajo y tendremos que plantar tomates y criar gallinas 🌱
 
 </h1>
 
