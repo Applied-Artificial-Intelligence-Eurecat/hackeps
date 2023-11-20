@@ -1,3 +1,12 @@
+-----
+
+<h1 align="center">
+
+🔬 La IA ens deixarà sense treball i haurem de plantar tomàquets i criar gallines 🌱
+
+</h1>
+
+-----
 # El reto 👨‍🌾👩‍🌾
  
 Este año, apostamos por un problema mucho más amplio que incluya no solo la parte de data scientist de la unidad de Applied Artificial Intelligence, sino que también requiera experimentar en otros campos, como puede ser TODO.
