@@ -62,7 +62,6 @@ Interacting with data is almost as important as having it. The department of dev
 
 Conceive, design, and develop tools related to the care of the digital garden, which ideally make use of the data collected in any of the other missions.
 
-
 ## How to Start?
 
 ### Resources 📦
