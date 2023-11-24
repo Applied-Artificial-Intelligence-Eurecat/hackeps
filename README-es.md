@@ -4,7 +4,7 @@
 
 <h1 align="center">
 
-🔬 La IA nos dejará sin trabajo y tendremos que plantar tomates y criar gallinas 🌱
+🔬 AI Will Leave Us Jobless and We Will Have to Grow Tomatoes and Raise Chickens 🌱
 
 </h1>
 
@@ -14,11 +14,12 @@
 Este año, apostamos por un problema mucho más amplio que incluya no solo la parte de data scientist de la unidad de Applied Artificial Intelligence, sino que también requiera experimentar en otros campos, como puede ser TODO.
 
 ## Las misiones 🍅
-Para familiarizarnos con las plantas para cuando tengamos que ir a plantar tomates, hemos fundado el Departamento Vegetal de AAI y definido un plan de ejecución formado por cinco misiones:
+Para familiarizarnos con las plantas para cuando tengamos que ir a plantar tomates, hemos fundado el Departamento Vegetal de AAI y definido un plan de ejecución formado por seis misiones:
 
 - 🌼 **Misión Margarita**
 - 🌷 **Misión Tulipa**
 - 🎋 **Misión Bambú**
+- 🥦 **Misión Brócoli**
 - 🥑 **Misión Aguacate**
 - 🍑 **Misión Melocotón**
 
@@ -48,9 +49,16 @@ Este kit contiene el material necesario para poder conectar una nueva planta al 
 Enviad los datos disponibles de la nueva planta al servidor y registradlos junto con el resto de datos de la planta anterior.
 
 ### 🎋 MISIÓN BAMBÚ
-Por culpa de algún becario >:(, los datos que registramos tienen algunos errores, ya que los sensores no funcionaban correctamente. Para no perder todo este progreso, la unidad de chismes guardó estos datos en un dataset que debería estar disponible en este repositorio.
+Por culpa de algún becario >:(, los datos que registramos tienen algunos errores, ya que los sensores no funcionaban correctamente. ¡Identifica cuáles 2 variables tienen errores en nuestro conjunto de datos! Seguramente están relacionadas. Hay dos tipos de errores de lectura, uno asociado a un sensor y otro asociado a dos. Para no perder todo este progreso, la unidad de chismes y desastres guardó estos datos en un conjunto de datos data/train.csv. Encontrarás pocos errores, así que no es necesario que implementes ningún modelo de aprendizaje automático. ¡Pero ten cuidado! Puede que en la misión del brócoli 🥦 te sea útil utilizar estos datos corregidos.
 
-El Departamento Vegetal quiere solucionar estos errores para poder disponer de este dataset para futuros congresos de monitorizacion de plantas.
+Para poder entregar esta misión, deberéis darnos el archivo CSV corregido con los datos corregidos, y así tendremos a nuestros agrónomos contentos para futuros congresos de monitorización de plantas. Déjalo en vuestro repositorio data/<equipo>-anomaly.csv.
+
+### 🥦 MISSIÓ BRÓCOLI
+
+El departamento vegetal somos unos visionarios y queremos saber cuál será la humedad del suelo, humedad del aire y temperatura ambiente de nuestra planta en los catorce días siguientes al horizonte de tiempo del conjunto de datos. ¡Esto significa que debéis hacer una previsión de cómo serán estos datos dentro de 14 días! Podéis utilizar datos externos para ayudar, pero siempre considerando que tampoco tendréis estos datos externos después del final del conjunto de datos. ¡No todo son flores!
+
+Para poder entregar esta misión, deberéis proporcionarnos el archivo CSV con la humedad del suelo, humedad del aire y temperatura ambiente en el mismo formato de fechas que el conjunto de datos data/train.csv. Dejad el CSV en vuestro repositorio data/<equipo>-forecast.csv.
+
 
 ### 🥑 MISIÓN AGUACATE
 La obsesión por programar preocupa al Departamento Vegetal, ¡las plantas se morirán de sed si continúa esta dinámica! Como coger una regadera y regarlas regularmente no parece ser una opción, se ha entregado una mini bomba de agua para que podáis automatizarlo.
@@ -102,8 +110,13 @@ Para el procesamiento de datos:
 - [pandas](https://pandas.pydata.org/)
 - [numpy](https://numpy.org/)
 - [statsmodels](https://www.statsmodels.org/)
-- [Pillow](https://pypi.org/project/Pillow/)
 - [matplotlib](https://pypi.org/project/matplotlib/)
+
+AI:
+- [scikit-learn](https://scikit-learn.org/stable/index.html)
+- [xgboost](https://xgboost.readthedocs.io/en/stable/)
+- [pytorch](https://pytorch.org/)
+
 
 ## La puntuación 👀
 

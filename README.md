@@ -12,19 +12,20 @@
 
 # El repte 👨‍🌾👩‍🌾
 
-Aquest any, apostem per un problema molt més ampli que inclogui no només la part de data scientist de la unitat d'Applied Artificial Intelligence, sinó que també requereixi experimentar altres camps, com pot ser TODO
+Aquest any, apostem per un problema molt més ampli que inclogui no només la part de data scientist de la unitat d'Applied Artificial Intelligence, sinó que també requereixi experimentar amb la programació, l'ús de dispositius _Internet of Things_,  la gestió de dades i la seva visualització ✨
 
 
 ## Les missions 🍅
-Per a familiaritzar-nos amb les plantes per a quan hàgim d'anar a plantar tomàquets, hem fundat el Departament Vegetal d'AAI i definit un pla d'execució format per cinc missions:
+Per a familiaritzar-nos amb les plantes per a quan hàgim d'anar a plantar tomàquets, hem fundat el Departament Vegetal d'AAI i definit un pla d'execució format per sis missions:
 
 - 🌼 **Missió Margarida**
 - 🌷 **Missió Tulipa**
 - 🎋 **Missió Bambú**
+- 🥦 **Missió Bròcoli**
 - 🥑 **Missió Alvocat**
 - 🍑 **Missió Préssec**
 
-A excepció de la `🌼 MISSIÓ MARGARITA`, aquestes missions no són necessàriament seqüencials: podeu fer-les de manera paral·lela entre els companys, o anar saltant d'una a una altra en funció de la vostra inspiració... Fins i tot podeu no fer algunes i inventar-vos-en d'altres. 
+A excepció de la `🌼 MISSIÓ MARGARITA`, aquestes missions no són necessàriament seqüencials: podeu fer-les de manera paral·lela entre els companys, o anar saltant d'una a una altra en funció de la vostra inspiració... Fins i tot podeu **no fer algunes** i **inventar-vos-en** d'altres.
 
 No dubteu en venir a l'ambaixada del Departament Vegetal d'AAI (conegut com les taules de la HackEPS, on es troben els representants d'Eurecat) per validar les vostres idees si teniu algun dubte sobre si encaixa dins de la idea general del repte.
 
@@ -42,6 +43,8 @@ A les nostres instal·lacions tenim una primera planta enviant les dades a un se
 
 El Departament Vegetal necessita poder guardar les dades d'alguna forma per la posterior visualització i anàlisi.
 
+Necessiteu ajuda? No sabeu per on començar? Us falten les credencials? Pregunteu per slack o visiteu-nos!
+
 ### 🌷 MISSIÓ TULIPA
 Un cop disposeu d'un sistema per guardar les dades a temps real, sol·liciteu al Departament Vegetal d'AAI d'Eurecat el _Ultimate SensorPlanta Kit 2023_.
 
@@ -50,9 +53,15 @@ Aquest kit conté el material necessari per a poder connectar una nova planta a 
 Envieu les dades disponibles de la nova planta al servidor i enregistreu-les juntament amb la resta de dades de l'hort.
 
 ### 🎋 MISSIÓ BAMBÚ
-Per culpa d’algun becari >:(, les dades que vam enregistrar tenen alguns errors, ja que els sensors no funcionaven correctament. Per a no perdre tot aquest progrés, la unitat de nyaps va guardar aquestes dades en un dataset **TBD: com donar el _dataset_**.
+Per culpa d’algun becari >:(, les dades que vam enregistrar tenen alguns errors, ja que els sensors no funcionaven correctament. Identifiqueu *quines 2 variables* tenen errors al nostre dataset! Segurament estan lligades. Hi ha dos tipus d'errors de lectura, un associat a un sensor, i un altre associat a dos. Per a no perdre tot aquest progrés, la unitat de nyaps va guardar aquestes dades en un dataset **data/train.csv**. Hi trobaràs pocs errors, així que no cal que implementis cap model d'aprenentatge automàtic. Però vigila! Potser que a la missió bròcoli 🥦 et vagi bé utilitzar aquestes dades corregides.
 
-Departament Vegetal vol solucionar aquests errors per a poder disposar d'aquest dataset.
+Per poder entregar aquesta missió, haureu de donar-nos el csv corregit amb les dades corregides, i així tindrem els nostres agrònoms contents per futurs congressos de monitorització de plantes. Deixeu-lo al vostre repositori `data/<team>-anomaly.csv`.
+
+### 🥦 MISSIÓ BRÒCOLI
+
+El departament vegetal som uns visionaris i volem saber quina serà la humitat del terra, humitat de l'aire i temperatura ambient de la nostra planta en els catorze dies següents de l'horitzó de temps del dataset. Això vol dir que heu de fer un forecast de com seran aquestes dades en 14 dies vista! Podeu utilitzar dades externes per ajudar, però sempre consdierant que no tindreu aquestes dades externes tampoc després del final del dataset. No tot són flors i violes.
+
+Per poder entregar aquesta missió, haureu de donar-nos el csv amb humitat del terra, humitat de l'aire i temperature ambient amb el mateix format de dates que el dataset **data/train.csv**. Deixeu el csv al vostre repositori `data/<team>-forecast.csv`.
 
 ### 🥑 MISSIÓ ALVOCAT
 L'obsessió per programar preocupa al Departament Vegetal, ja que les plantes es moriran de set si continua aquesta dinàmica! Com que agafar una regadora i regar-les regularment no sembla ser una opció, s'ha fet entrega d'una bomba d’aigua perquè pugueu automatitzar-ho. 
@@ -103,8 +112,12 @@ Per a tractar dades
 - [pandas](https://pandas.pydata.org/)
 - [numpy](https://numpy.org/)
 - [statsmodels](https://www.statsmodels.org/)
-- [Pillow](https://pypi.org/project/Pillow/)
 - [matplotlib](https://pypi.org/project/matplotlib/)
+
+AI:
+- [scikit-learn](https://scikit-learn.org/stable/index.html)
+- [xgboost](https://xgboost.readthedocs.io/en/stable/)
+- [pytorch](https://pytorch.org/)
 
 ## La puntuació 👀
 
