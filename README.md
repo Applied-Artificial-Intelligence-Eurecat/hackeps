@@ -39,7 +39,7 @@ No patiu! 🥴 Sabem que conteu només amb 24h… No valorem exclusivament el no
 ### 🌼 MISSIÓ MARGARIDA 
 Abans de poder començar cap tasca, cal obtenir dades. 
 
-A les nostres instal·lacions tenim una primera planta enviant les dades a un servidor d'Eurecat mitjançant el procol MQTT a temps real. En aquest servidor es troba un broker Mosquitto. Demaneu a la taula d’Eurecat que us donin un usuari i contrasenya per a poder fer la connexió i escoltar els missatges que transmet la planta al topic `hackeps/eurecat`
+A les nostres instal·lacions tenim les primeres plantes enviant les dades a un servidor d'Eurecat mitjançant el procol MQTT a temps real. En aquest servidor es troba un broker Mosquitto. Demaneu a la taula d’Eurecat que us donin un usuari i contrasenya per a poder fer la connexió i escoltar els missatges que transmet la planta al topic `hackeps/eurecat`
 
 El Departament Vegetal necessita poder guardar les dades d'alguna forma per la posterior visualització i anàlisi.
 
