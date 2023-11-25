@@ -44,13 +44,13 @@ Send the available data of the new plant to the server and record it along with 
 ### 🎋 BAMBOO MISSION
 Due to some intern's mistake >:(, the data we recorded have some errors, as the sensors were not working correctly. Identify which 2 variables have errors in our dataset! They are likely related. There are two types of reading errors, one associated with a sensor and another associated with two. To not lose all this progress, the gossip and disaster unit saved these data in a dataset data/train.csv. You will find few errors, so it's not necessary to implement any machine learning model. But be careful! In the broccoli mission 🥦, you may find it useful to use these corrected data.
 
-To complete this mission, you must give us the corrected CSV file with the corrected data, so we will have our agronomists happy for future plant monitoring conferences. Leave it in your repository data/<team>-anomaly.csv.
+To complete this mission, you must give us the corrected CSV file with the corrected data, so we will have our agronomists happy for future plant monitoring conferences. Leave it in your repository `data/<team>-anomaly.csv`.
 
 ### 🥦 BROCCOLI MISSION
 
 The vegetable department are visionaries, and we want to know what the soil moisture, air humidity, and ambient temperature of our plant will be in the fourteen days following the time horizon of the dataset. This means you must forecast what these data will be like in 14 days! You can use external data to help, but always considering that you will not have these external data after the end of the dataset either. It's not always sunshine and rainbows!
 
-To complete this mission, you must provide us with the CSV file with the soil moisture, air humidity, and ambient temperature in the same date format as the data/train.csv dataset. Leave the CSV in your repository data/<team>-forecast.csv.
+To complete this mission, you must provide us with the CSV file with the soil moisture, air humidity, and ambient temperature in the same date format as the data/train.csv dataset. Leave the CSV in your repository `data/<team>-forecast.csv`.
 
 ### 🥑 AVOCADO MISSION
 The obsession with programming worries the Vegetable Department; the plants will die of thirst if this dynamic continues! Since grabbing a watering can and watering them regularly does not seem to be an option, a mini water pump has been provided so you can automate it.

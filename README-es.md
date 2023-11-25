@@ -51,13 +51,13 @@ Enviad los datos disponibles de la nueva planta al servidor y registradlos junto
 ### 🎋 MISIÓN BAMBÚ
 Por culpa de algún becario >:(, los datos que registramos tienen algunos errores, ya que los sensores no funcionaban correctamente. ¡Identifica cuáles 2 variables tienen errores en nuestro conjunto de datos! Seguramente están relacionadas. Hay dos tipos de errores de lectura, uno asociado a un sensor y otro asociado a dos. Para no perder todo este progreso, la unidad de chismes y desastres guardó estos datos en un conjunto de datos data/train.csv. Encontrarás pocos errores, así que no es necesario que implementes ningún modelo de aprendizaje automático. ¡Pero ten cuidado! Puede que en la misión del brócoli 🥦 te sea útil utilizar estos datos corregidos.
 
-Para poder entregar esta misión, deberéis darnos el archivo CSV corregido con los datos corregidos, y así tendremos a nuestros agrónomos contentos para futuros congresos de monitorización de plantas. Déjalo en vuestro repositorio data/<equipo>-anomaly.csv.
+Para poder entregar esta misión, deberéis darnos el archivo CSV corregido con los datos corregidos, y así tendremos a nuestros agrónomos contentos para futuros congresos de monitorización de plantas. Déjalo en vuestro repositorio `data/<equipo>-anomaly.csv`.
 
 ### 🥦 MISSIÓ BRÓCOLI
 
 El departamento vegetal somos unos visionarios y queremos saber cuál será la humedad del suelo, humedad del aire y temperatura ambiente de nuestra planta en los catorce días siguientes al horizonte de tiempo del conjunto de datos. ¡Esto significa que debéis hacer una previsión de cómo serán estos datos dentro de 14 días! Podéis utilizar datos externos para ayudar, pero siempre considerando que tampoco tendréis estos datos externos después del final del conjunto de datos. ¡No todo son flores!
 
-Para poder entregar esta misión, deberéis proporcionarnos el archivo CSV con la humedad del suelo, humedad del aire y temperatura ambiente en el mismo formato de fechas que el conjunto de datos data/train.csv. Dejad el CSV en vuestro repositorio data/<equipo>-forecast.csv.
+Para poder entregar esta misión, deberéis proporcionarnos el archivo CSV con la humedad del suelo, humedad del aire y temperatura ambiente en el mismo formato de fechas que el conjunto de datos data/train.csv. Dejad el CSV en vuestro repositorio `data/<equipo>-forecast.csv`
 
 
 ### 🥑 MISIÓN AGUACATE
