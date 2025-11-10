@@ -4,127 +4,85 @@
 
 <h1 align="center">
 
-🔬 AI Will Leave Us Jobless and We Will Have to Grow Tomatoes and Raise Chickens 🌱
+💫  NebulOuS: Tu propio cluster Multi-Cloud ☁️
 
 </h1>
 
 -----
-# El reto 👨‍🌾👩‍🌾
- 
-Este año, apostamos por un problema mucho más amplio que incluya no solo la parte de data scientist de la unidad de Applied Artificial Intelligence, sino que también requiera experimentar en otros campos, como puede ser TODO.
+## El reto 🔎
 
-## Las misiones 🍅
-Para familiarizarnos con las plantas para cuando tengamos que ir a plantar tomates, hemos fundado el Departamento Vegetal de AAI y definido un plan de ejecución formado por seis misiones:
+Google Cloud, Amazon Web Services, Microsoft Azure...  grandes proveedores que pueden acabar fallando, y lo hacen (algunos más que otros 😶‍🌫️). Y en ese momento, todo el mundo hubiese deseado no depender de uno solo.
 
-- 🌼 **Misión Margarita**
-- 🌷 **Misión Tulipa**
-- 🎋 **Misión Bambú**
-- 🥦 **Misión Brócoli**
-- 🥑 **Misión Aguacate**
-- 🍑 **Misión Melocotón**
+Por eso, este año os proponemos ayudar a ese pobre diablo que se equivocó confiando solo en uno de ellos, y  creeis una plataforma para crear clusters de máquinas en distintos proveedores 🤙 Desarrollo de Software, IA, DevOPS... en este reto podréis practicar todas las disciplinas para conseguir vuestro objetivo 😎
 
-Excepto la `🌼 MISIÓN MARGARITA`, estas misiones no son necesariamente secuenciales: podréis hacerlas de manera paralela entre los compañeros, o saltar de una a otra según su inspiración... Incluso podéis no hacer las que no os parezcan interesantes e inventaros otras.
+## Objetivos
+El objetivo final puede ser fácil de decir: **una plataforma para creación de clusters-multicloud**, pero lograrlo puede ser algo más abrumador.
 
-No dudéis en venir a la embajada del Departamento Vegetal de AAI (conocido como las mesas del pasillo) para validar sus ideas si tienen alguna duda sobre si alguna idea encaja dentro de la idea general del reto.
+Por ello, os sugerimos algunos puntos, que como decimos todos los años: **NO**, no hace falta que hagáis todos los puntos (es una hackathon), y sois libres darle vuestro propio enfoque original a la plataforma, nosotros solo sugerimos ideas ;)
 
-La `🌼 MISIÓN MARGARITA` **ES OBLIGATORIA**.
+Y si no os sale algo... ¡Preguntad!
+<h4 align="center">
 
-![](https://media.tenor.com/aeV80XD4CSgAAAAd/guidlines-pirates-of-the-caribbean.gif)
+![](https://camo.githubusercontent.com/abee1b0ea2fb94ffd75986431a093a0f22aeb534a70d11b3fa493f2eda877355/68747470733a2f2f6d656469612e74656e6f722e636f6d2f616556383058443443536741414141642f677569646c696e65732d706972617465732d6f662d7468652d63617269626265616e2e676966)
 
-¡Tranquilidad! 🥴 Sabemos que solo hay 24 horas... No valoramos exclusivamente el número de misiones completadas, sino también que aprendáis, la originalidad, y que seáis lo suficientemente analíticos para aportar una solución y un punto de vista a los problemas que surjan.
+_El Código es más bien lo que llamarías "directrices" que reglas de verdad._
+</h4>
 
+**00 - ¿Qué hay en el cloud?**
 
-### 🌼 MISIÓN MARGARITA 
-Antes de poder empezar ninguna tarea, hay que obtener datos.
+Poder ver que nodos pueden crearse en los proveedores cloud
+ > Cada proveedor tiene sus máquinas con sus recursos... ¿Podréis recuperarlos automáticamente para poder elegir más adelante la mejor opción?
 
-En nuestras instalaciones tenemos una primera planta enviando los datos a un servidor de Eurecat mediante el protocolo MQTT en tiempo real. En este servidor se encuentra un broker Mosquitto. Solicitad en la mesa de Eurecat que les dé un usuario y contraseña para poder hacer la conexión y escuchar los mensajes que transmite la planta en el topic `hackeps/eurecat`
+**01 - Tanto entre lo que elegir...**
+A partir de unos recursos, recuperar que posibles nodos pueden crearse en los distintos provedores cloud registrados.
+> Si queremos un nodo de X GB de RAM y X núcleos de CPU... ¿Dónde deberíamos desplegarlo? ¿Porqué? ¡Elegid métricas o dadle la responsabilidad al usuario para encontrar la opción óptima!
 
-El Departamento Vegetal necesita poder guardar los datos de alguna forma para la posterior visualización y análisis.
+**02 - El cluster habrá que crear**
+Recibir una lista de nodos y crear un cluster 
+> ¿Ya sabéis que máquinas queréis crear? ¡Creadlas y configuradlas para que actuen como un cluster! 
 
-### 🌷 MISIÓN TULIPA
-Con el sistema para guardar los datos en tiempo real listo, solicitad al Departamento Vegetal de AAI de Eurecat el _Ultimate SensorPlanta Kit 2023_.
+**03 - El usuario importa... ¿no?**
+Mejorad la experiencia de usuario
+> ¿Una herramienta cli por terminal? ¿Una web con formularios? ¿O un chatbot? ¿O quizás una mezcla de cada cosa?
 
-Este kit contiene el material necesario para poder conectar una nueva planta al huerto digital y enviar los datos de la planta al topic `/hackeps/{id asignado al equipo}`
+**04 - Todo va bien, muy bien, regular... ¡mal!**
+Monitorizar clusters y nodos
+> ¿Cuántos recuros quedan en el cluster? ¿Cómo va cada nodo? ¡Intentad recuperar la información y mostrarla al usuario!
 
-Enviad los datos disponibles de la nueva planta al servidor y registradlos junto con el resto de datos de la planta anterior.
-
-### 🎋 MISIÓN BAMBÚ
-Por culpa de algún becario >:(, los datos que registramos tienen algunos errores, ya que los sensores no funcionaban correctamente. ¡Identifica cuáles 2 variables tienen errores en nuestro conjunto de datos! Seguramente están relacionadas. Hay dos tipos de errores de lectura, uno asociado a un sensor y otro asociado a dos. Para no perder todo este progreso, la unidad de chismes y desastres guardó estos datos en un conjunto de datos data/train.csv. Encontrarás pocos errores, así que no es necesario que implementes ningún modelo de aprendizaje automático. ¡Pero ten cuidado! Puede que en la misión del brócoli 🥦 te sea útil utilizar estos datos corregidos.
-
-Para poder entregar esta misión, deberéis darnos el archivo CSV corregido con los datos corregidos, y así tendremos a nuestros agrónomos contentos para futuros congresos de monitorización de plantas. Déjalo en vuestro repositorio `data/<equipo>-anomaly.csv`.
-
-### 🥦 MISSIÓ BRÓCOLI
-
-El departamento vegetal somos unos visionarios y queremos saber cuál será la humedad del suelo, humedad del aire y temperatura ambiente de nuestra planta en los catorce días siguientes al horizonte de tiempo del conjunto de datos. ¡Esto significa que debéis hacer una previsión de cómo serán estos datos dentro de 14 días! Podéis utilizar datos externos para ayudar, pero siempre considerando que tampoco tendréis estos datos externos después del final del conjunto de datos. ¡No todo son flores!
-
-Para poder entregar esta misión, deberéis proporcionarnos el archivo CSV con la humedad del suelo, humedad del aire y temperatura ambiente en el mismo formato de fechas que el conjunto de datos data/train.csv. Dejad el CSV en vuestro repositorio `data/<equipo>-forecast.csv`
+**05 - ¿Cloud? ¡Eso es solo el ordenador de otro!**
+Dar de alta y baja nodos Edge 
+> No todo se reduce al cloud... Podéis conectaros directamente a máquinas virtuales, raspberrys u otros ordenadores vía SSH que pueden actuar como nodos ( cuidado con las limitaciones de red de Eduroam...)
 
 
-### 🥑 MISIÓN AGUACATE
-La obsesión por programar preocupa al Departamento Vegetal, ¡las plantas se morirán de sed si continúa esta dinámica! Como coger una regadera y regarlas regularmente no parece ser una opción, se ha entregado una mini bomba de agua para que podáis automatizarlo.
-
-Agreguen la bomba de agua al sistema y habiliten algún mecanismo para regar la planta.
-
-### 🍑 MISIÓN MELOCOTÓN
-Interactuar con los datos es casi tan importante como tenerlos. El departamento de desarrollo de interfaces atractivas, colaboradores habituales del departamento vegetal de AAI, ha sido subcontratado para idear una manera de poder explotar estos datos, pero están más secos de ideas que un nogal en enero.
-
-Idead, diseñad y desarrollad herramientas relacionadas con el cuidado del huerto digital, que idealmente hagan uso de los datos recogidos en cualquiera de las otras misiones.
+### ¿Qué os damos? 
+A los equipos interesados en participar, os dejaremos:
+- Una Service Account para poder crear y gestionar máquinas en `Google Cloud` (Cloud Engine)
+- Una API Key para poder crear y gestionar máquinas en `Amazon Web Services` (EC2)
+- Acceso a una API de LLM para que podáis generar y procesar texto natural 
 
 
-## ¿Cómo comenzar?
+### ¿Cómo puedo hacer un cluster?
+Podéis usar la tecnología que queráis. Si no tenéis miedo a sufrir estas 24h podéis arriesgaros con K8s (Kubernetes), aunque os recomendamos alternativas más _Hackathon Friendly_ cómo [Docker Swarm](https://docs.docker.com/engine/swarm/)... Pero tampoco os preocupeis mucho si no termina de ir el cluster como cluster
 
-### Recursos 📦
-Inicialmente tendréis acceso a un Broker MQTT:
-> IP: 84.88.76.18
->
-> Puerto: 1883
->
-> Usuario y contraseña: _¡Venid a preguntar!_
+### MUY, MUCHO, MUCHÍSIMO IMPORTANTE
+Por favor, aseguraros de EXCLUIR las credenciales del repositorio publico de GitHub. Podéis crear un archivo `.gitignore` en la base de vuestro proyecto y añadir:
+```.gitignore
+**.json
+```
+Todo aviso muy importante tiene una historia detrás
+![](https://i.imgflip.com/aaq9wn.jpg)
 
-Temas MQTT:
-> `hort/plantes`
->
-> `hort/team/{Nombre asignado al equipo}`
-
-Una vez avanzada la misión Margarita, podrán solicitar el _Ultimate SensorPlanta Kit 2023_ en nuestra mesa, que constará de:
-|    **ESP3288**   	|      **Cable MicroUSB**     	|           **Planta**          	|
-|:----------------:	|:---------------------------:	|:-----------------------------:	|
-|    **Díodos**    	|        **Protoboard**       	|       **Bomba de agua**       	|
-| **Resistencias** 	| **Convertidor de Voltaje** 	| **Varios sensores y cables** 	|
-
-### Recomendaciones
-Les recomendamos que utilicen el lenguaje de programación con el que se sientan más cómodos. Para programar el microcontrolador, pueden usar C, C++, Micro-Python, Lua o JavaScript. Para la visualización de datos, pueden utilizar Python, junto con el uso de [notebooks](https://jupyter.org/).
-
-Estas son algunas bibliotecas (**LIBRARY != LLIBRERIA**) y herramientas que podrían utilizar para llevar a cabo las tareas que se presentan en las misiones:
-
-Para la conexión al broker MQTT:
-- [MQTTX](https://mqttx.app/)
-- [Eclipse PAHO (biblioteca MQTT para muchos lenguajes populares)](https://eclipse.dev/paho/)
-
-Para el desarrollo del Microcontrolador:
-- [Arduino IDE](https://www.arduino.cc/en/software)
-- [ESP8266 Datasheet (Resumen)](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/documentation/NodeMCU%20Documentation.pdf)
-- [ESP8266 Technical Reference](https://www.espressif.com/sites/default/files/documentation/esp8266-technical_reference_en.pdf) 
-
-Para el procesamiento de datos:
-- [pandas](https://pandas.pydata.org/)
-- [numpy](https://numpy.org/)
-- [statsmodels](https://www.statsmodels.org/)
-- [matplotlib](https://pypi.org/project/matplotlib/)
-
-AI:
-- [scikit-learn](https://scikit-learn.org/stable/index.html)
-- [xgboost](https://xgboost.readthedocs.io/en/stable/)
-- [pytorch](https://pytorch.org/)
+## Documentación
 
 
-## La puntuación 👀
+## Ganadores 🏅
+En esta ocasión, se nombrán dos equipos ganadores:
+- **Ganadores:** Un premio al equipo que logre una solución más equilibrada entre calidad, ejecución e idea
+- **Jóvenes promesas:** Premio destinado a equipos cuyos miembros no tengan conocimientos previos, que presenten una solución bien ideada y demuestren su capacidad de aprendizaje.
+### ¿Qué se valorará? 
 
-Tomaremos en cuenta la originalidad de las soluciones y de la presentación, el porcentaje de misiones completadas,
-la eficacia, la eficiencia, la excelencia y el éxito en las soluciones, el trabajo en equipo, la comunicación y queremos saber por qué deberían ser el equipo ganador.
 
-### El premio 🏆
-- 800€ para el 1er Premio
-- 200€ para el 2do Premio 
+### El premio 🤑
 
-¡Buena suerte!
+- Cheque Amazon por valor de 1000€ para el **primer premio**
+- Cheque Amazon por valor de 200€ para el premio de **jóvenes promesas**
