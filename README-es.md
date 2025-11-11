@@ -4,19 +4,18 @@
 
 <h1 align="center">
 
-💫  NebulOuS: Tu propio cluster Multi-Cloud ☁️
+💫  NebulOuS: Tu propio cluster Multi-Cloud-edge ☁️
 
 </h1>
 
 -----
 ## El reto 🔎
 
-Google Cloud, Amazon Web Services, Microsoft Azure...  grandes proveedores que pueden acabar fallando, y lo hacen (algunos más que otros 😶‍🌫️). Y en ese momento, todo el mundo hubiese deseado no depender de uno solo.
-
+Google Cloud, Amazon Web Services, Microsoft Azure...  grandes proveedores que pueden acabar fallando, y lo hacen (algunos más que otros 😶‍🌫️). Y en ese momento, todo el mundo hubiese deseado no depender de uno solo. 
 Por eso, este año os proponemos ayudar a ese pobre diablo que se equivocó confiando solo en uno de ellos, y  creeis una plataforma para crear clusters de máquinas en distintos proveedores 🤙 Desarrollo de Software, IA, DevOPS... en este reto podréis practicar todas las disciplinas para conseguir vuestro objetivo 😎
-
+Además, pensemos en lo local: ¿quién no tiene por casa un servidor de 8 CPU y 16 GB de RAM esperando a ser aprovechado para desplegar cosas?
 ## Objetivos
-El objetivo final puede ser fácil de decir: **una plataforma para creación de clusters-multicloud**, pero lograrlo puede ser algo más abrumador.
+El objetivo final puede ser fácil de decir: **una plataforma para creación de clusters-multicloud-edge**, pero lograrlo puede ser algo más abrumador.
 
 Por ello, os sugerimos algunos puntos, que como decimos todos los años: **NO**, no hace falta que hagáis todos los puntos (es una hackathon), y sois libres darle vuestro propio enfoque original a la plataforma, nosotros solo sugerimos ideas ;)
 
