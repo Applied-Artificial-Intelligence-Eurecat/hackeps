@@ -1,121 +1,180 @@
-<p align="right"><a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README.md">English</a> | <a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README-en.md">English</a> | <a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README-en.md">English</a></p>
+<p align="right"><a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README.md">Català</a> | <a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README-es.md">Español</a> | <a href="https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/README-en.md">English</a></p>
 
 -----
 
 <h1 align="center">
 
-🚀 From 0 to Data Scientist 🔬
+💫  NebulOuS: Your own Multi-Cloud-edge Cluster ☁️
 
 </h1>
 
 -----
-# The Challenge 👨‍🌾👩‍🌾
+# The challenge 🔎
 
-This year, we're betting on a much broader problem that includes not only the data scientist aspect of the Applied Artificial Intelligence unit but also requires experimenting in other fields, such as EVERYTHING.
+Google Cloud, Amazon Web Services, Microsoft Azure... big providers that may eventually fail, and they do (some more than others 😶‍🌫️). And in that moment, everyone wishes they didn't depend on just one. 
+That's why this year we propose helping that poor soul who made the mistake of trusting only one of them, and create a platform to deploy clusters of machines across different providers 🤙 Software Development, AI, DevOps... in this challenge you'll be able to practice all kinds of disciplines to reach your goal 😎
+And let's think locally: who doesn't have at home a server with 8 CPUs and 16 GB of RAM waiting to be used to deploy things?
+## Objectives
+The final objective is easy to say: **a platform to create multi-cloud-edge clusters**, but achieving it can be a bit more overwhelming.
 
-## The Missions 🍅
-To familiarize ourselves with plants for when we have to go plant tomatoes, we have founded the Vegetable Department of AAI and defined an execution plan consisting of six missions:
+For this reason, we suggest some functional points, and as we say every year: **NO**, you don't need to do all of them (it's a hackathon), and you are free to give your platform your own original approach — we only suggest ideas ;) And if you want to follow the ideas, you don't need to do them in this order either... If something doesn't work out, try moving on to the next one.
 
-- 🌼 **Daisy Mission**
-- 🌷 **Tulip Mission**
-- 🎋 **Bamboo Mission**
-- 🥦 **Broccoli Mission**
-- 🥑 **Avocado Mission**
-- 🍑 **Peach Mission**
+And if not... just ask us!
+<h4 align="center">
 
-Except for the `🌼 DAISY MISSION`, these missions are not necessarily sequential: you can carry them out in parallel among colleagues, or jump from one to another as inspired... You can even skip those that don't seem interesting to you and invent others.
+![](https://camo.githubusercontent.com/abee1b0ea2fb94ffd75986431a093a0f22aeb534a70d11b3fa493f2eda877355/68747470733a2f2f6d656469612e74656e6f722e636f6d2f616556383058443443536741414141642f677569646c696e65732d706972617465732d6f662d7468652d63617269626265616e2e676966)
 
-Do not hesitate to come to the embassy of the AAI Vegetable Department (known as the tables in the hallway) to validate your ideas if you have any doubts about whether an idea fits within the general idea of the challenge.
+_The Code is more what you'd call "guidelines" than actual rules._
+</h4>
 
-### 🌼 DAISY MISSION
-Before starting any task, data must be obtained.
+### Device Management
+**000 - Hello? It's me!**
 
-In our facilities, we have a first plant sending data to a Eurecat server using the MQTT protocol in real-time. On this server, there is a Mosquitto broker. Request at the Eurecat desk for a username and password to make the connection and listen to the messages transmitted by the plant on the topic `hackeps/eurecat`.
+Connect to the GCP and AWS APIs using the credentials we'll provide, and even allow multiple registered accounts.
 
-The Vegetable Department needs to be able to store the data in some way for later visualization and analysis.
+**001 - Cloud? It's just someone else's computer!**
 
-### 🌷 TULIP MISSION
-With the system for storing real-time data ready, request from the AAI Vegetable Department of Eurecat the _Ultimate SensorPlanta Kit 2023_.
+Besides the cloud, it's also interesting to have _edge_ devices, such as your own computer (or a VM), Raspberry Pis, etc. Having a list of these devices and being able to register and deregister them can also be useful.
+Register and deregister Edge nodes 
+> If you want to connect via SSH to Raspberry Pis or colleagues' computers, apart from being careful with firewalls, use mobile network, as Eduroam tends to have the bad habit of blocking these types of connections.
 
-This kit contains the necessary materials to connect a new plant to the digital garden and send the plant data to the topic `/hackeps/{id assigned to the team}`.
+**010 - What's in the cloud?**
 
-Send the available data of the new plant to the server and record it along with the rest of the data from the previous plant.
+Being able to see which nodes can be created in cloud providers: machine types, resources, costs, etc. Additionally, it's interesting to be able to filter or search for machine types that meet certain HW and CPU requirements.
 
-### 🎋 BAMBOO MISSION
-Due to some intern's mistake >:(, the data we recorded have some errors, as the sensors were not working correctly. Identify which 2 variables have errors in our dataset! They are likely related. There are two types of reading errors, one associated with a sensor and another associated with two. To not lose all this progress, the gossip and disaster unit saved these data in a dataset data/train.csv. You will find few errors, so it's not necessary to implement any machine learning model. But be careful! In the broccoli mission 🥦, you may find it useful to use these corrected data.
+### Cluster Creation
 
-To complete this mission, you must give us the corrected CSV file with the corrected data, so we will have our agronomists happy for future plant monitoring conferences. Leave it in your repository `data/<team>-anomaly.csv`.
+**011 - The cluster must be created**
 
-### 🥦 BROCCOLI MISSION
+Given a need for X machines with Y resources per machine, you'll need to choose which cloud provider and which instances to deploy, or which edge devices to use.
 
-The vegetable department are visionaries, and we want to know what the soil moisture, air humidity, and ambient temperature of our plant will be in the fourteen days following the time horizon of the dataset. This means you must forecast what these data will be like in 14 days! You can use external data to help, but always considering that you will not have these external data after the end of the dataset either. It's not always sunshine and rainbows!
+> It's totally valid to allow the user to manually choose which instances to use, although you can also try to choose "automatically" based on metrics you consider (price? ping? location?)
 
-To complete this mission, you must provide us with the CSV file with the soil moisture, air humidity, and ambient temperature in the same date format as the data/train.csv dataset. Leave the CSV in your repository `data/<team>-forecast.csv`.
+**100 - LIAR! This is not a cluster**
 
-### 🥑 AVOCADO MISSION
-The obsession with programming worries the Vegetable Department; the plants will die of thirst if this dynamic continues! Since grabbing a watering can and watering them regularly does not seem to be an option, a mini water pump has been provided so you can automate it.
+Once the _edge_ nodes are chosen and/or the cloud machines are created, the necessary software should be installed and configured (automatically) on them so they act as a cluster.
 
-Add the water pump to the system and enable some mechanism to water the plant.
+> Some options, from less to more complex, are Nomad, Docker Swarm, K3s or Kubernetes (but you can use whatever you want, even if you want to develop something of your own)
 
-### 🍑 PEACH MISSION
-Interacting with data is almost as important as having it. The department of developing attractive interfaces, regular collaborators of the AAI vegetable department, has been subcontracted to devise a way to exploit this data, but they are drier of ideas than a walnut tree in January.
+### Monitoring and Deployment
 
-Conceive, design, and develop tools related to the care of the digital garden, which ideally make use of the data collected in any of the other missions.
+**101 - Everything is going great, very well, okay... bad!**
 
-## How to Start?
+Allow the user to review the status of the cluster(s) and the resource consumption of the nodes.
 
-### Resources 📦
-Initially, you will have access to an MQTT Broker:
-> IP: 84.88.76.18
->
-> Port: 1883
->
-> Username and password: _Come and ask!_
+**110 - What's this good for?**
 
-MQTT Topics:
-> `hort/plantes`
->
-> `hort/team/{Name assigned to the team}`
+Allow the user to deploy an application on the cluster.
 
-Once you have advanced in the Daisy mission, you can request the _Ultimate SensorPlanta Kit 2023_ at our table, which will consist of:
-|    **ESP3288**    |      **MicroUSB Cable**       |           **Plant**            |
-|:----------------: |:-----------------------------:|:-----------------------------: |
-|    **Diodes**     |        **Protoboard**         |       **Water Pump**           |
-| **Resistors**     | **Voltage Converter**         | **Various Sensors and Cables** |
+## What do we give you? 
+Teams interested in participating will receive:
+- A Service Account to create and manage machines in `Google Cloud` (Compute Engine)
+- An API Key to create and manage machines in `Amazon Web Services` (EC2)
+- Access to an LLM API so you can generate and process natural language 
 
-### Recommendations
-We recommend that you use the programming language you are most comfortable with. To program the microcontroller, you can use C, C++, Micro-Python, Lua, or JavaScript. For data visualization, you can use Python, along with [notebooks](https://jupyter.org/).
+## Considerations
+It is strictly forbidden to share the key assigned to you with other groups.
 
-These are some libraries and tools you might use to carry out the tasks presented in the missions:
+Please create all machines in European regions.
 
-For connecting to the MQTT broker:
-- [MQTTX](https://mqttx.app/)
-- [Eclipse PAHO (MQTT library for many popular languages)](https://eclipse.dev/paho/)
+For security reasons, creating VMs with associated graphics is not allowed.
 
-For Microcontroller development:
-- [Arduino IDE](https://www.arduino.cc/en/software)
-- [ESP8266 Datasheet (Summary)](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/documentation/NodeMCU%20Documentation.pdf)
-- [ESP8266 Technical Reference](https://www.espressif.com/sites/default/files/documentation/esp8266-technical_reference_en.pdf)
-
-For data processing:
-- [pandas](https://pandas.pydata.org/)
-- [numpy](https://numpy.org/)
-- [statsmodels](https://www.statsmodels.org/)
-- [matplotlib](https://pypi.org/project/matplotlib/)
-
-AI:
-- [scikit-learn](https://scikit-learn.org/stable/index.html)
-- [xgboost](https://xgboost.readthedocs.io/en/stable/)
-- [pytorch](https://pytorch.org/)
+To avoid problems, in Google Cloud Platform, external connections from any IP to all ports of the machines you create are allowed.
 
 
-## Scoring 👀
+### VERY, VERY, VERY IMPORTANT
+Please make sure to EXCLUDE credentials from the public GitHub repository. You can create a `.gitignore` file in your project root and add:
+```.gitignore
+**.json
+```
+Every important warning has a story behind it
 
-We will consider the originality of the solutions and presentation, the percentage of missions completed,
-the effectiveness, efficiency, excellence, and success of the solutions, teamwork, communication, and we want to know why you should be the winning team.
+![](https://i.imgflip.com/aaq9wn.jpg)
 
-### The Prize 🏆
-- €800 for the 1st Prize
-- €200 for the 2nd Prize
+## Documentation and Information
+You can connect to a machine via [**SSH**](https://www.cloudflare.com/es-es/learning/access-management/what-is-ssh/). Besides connecting via "username and password", you can also register an SSH key that you can generate with:
 
-Good luck!
+```sh
+ssh-keygen -t rsa -b 4096 -C "username"
+```
+
+This gives you a private key (with the name you specify) and a public one (the name you specify + `.pub`). When creating a machine in both AWS and GCP, you can provide the public key so you can connect via SSH later:
+```sh
+ssh -i <file> username@MACHINE-IP
+```
+
+### Clusters
+```arduino
+[AWS]          [Azure]          [GCP]
+ Client VM     Client VM       Client VM
+      \           |              /
+       \          |             /
+        \         |            /
+            Master Node (VM)
+```
+- [Docker Swarm](https://docs.docker.com/engine/swarm/)
+- [Nomad](https://developer.hashicorp.com/nomad)
+- [K3s](https://k3s.io/)
+- [K8s (Kubernetes)](https://kubernetes.io/)
+
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1280px-Google_Cloud_logo.svg.png" width="300"/>
+
+In Google Cloud Platform you can use the command line, and you'll need to install and configure [`gcloud`](https://docs.cloud.google.com/sdk/docs/install).
+You also have specific libraries for almost every programming language:
+- [Go](https://docs.cloud.google.com/go/docs)
+- [JavaScript](https://docs.cloud.google.com/nodejs/docs)
+- [Python](https://docs.cloud.google.com/python/docs)
+- [Java](https://docs.cloud.google.com/java/docs)
+- [C++](https://docs.cloud.google.com/cpp/docs)
+- [C#](https://docs.cloud.google.com/dotnet/docs)
+
+You have examples of how to use the libraries at [Google Cloud Platform's Github account](https://github.com/GoogleCloudPlatform).
+Specifically, the _product_ used is [Compute Engine](https://cloud.google.com/products/compute?hl=es)
+
+It is recommended to set the documentation language to English, as the Spanish versions are quite deficient.
+
+Additionally, you have some ChatGPT-made examples so you can test without going crazy in this same repository, at `examples\google-cloud-platform`. Check the README associated with the language you want to try.
+
+- [Python](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/python)
+- [Java](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/java)
+
+
+<img src="https://miro.medium.com/v2/resize:fit:1200/1*neG4D9C8UcJvNn6bverfIA.png" width="300"/>
+
+
+# Winners 🏅
+This time, two winning teams will be selected:
+- **Winners:** A prize for the team that achieves the most balanced solution between quality, execution, and idea
+- **Rising Stars:** A prize for teams whose members have no prior knowledge, who present a well-designed solution and demonstrate learning ability.
+
+### What will be evaluated? 
+Both the demo presented during the final presentation and all the information included in the Devpost submission will be evaluated (remember that you can update it even after the deadline). Based on this, we will evaluate, **mainly**:
+
+**For the first prize**
+- **Implemented ideas:** The level of originality will be taken into account, proposals that go beyond the basics, the proposed flows, and any novel functionality that is useful or practical.
+
+- **Functionality:** How well the project works as a whole, the state of each part, and the quality of integration between them.
+
+- **Architecture:** We will assess whether the proposed architecture would make sense in a real environment, if it is scalable, and if it is well designed.
+
+- **Technologies:** It's not about the language itself, but the complementary technologies used: web frameworks (React, Angular, Vue…), databases (Mongo, Postgres, MariaDB…), containers (Docker), etc.
+
+- **Code quality:** Even though it's a hackathon, we will consider avoiding excessive hardcoding, maintaining minimum good practices (indentation, typing in non-strictly typed languages, project organization…).
+
+**For Rising Stars**
+- **Implemented ideas:** Same as in the general category, originality and the contribution of useful functionalities beyond the basics will be valued.
+
+- **Learning:** Whether there was prior experience or not, what you learned in these 24 hours, the main challenges encountered and how you solved them.
+
+- **Teamwork:** How you organized yourselves, task distribution, and collaboration dynamics.
+
+- **Code quality:** Same criteria as in the main category: avoid unnecessary hardcoding and maintain a minimum of order and coherence.
+
+- **Idea presentation:** Clarity in explaining the proposal, its approach, and its objective.
+
+
+## The prize 🤑
+
+- Amazon voucher worth €1000 for the **first prize**
+- Amazon voucher worth €200 for the **Rising Stars** prize
