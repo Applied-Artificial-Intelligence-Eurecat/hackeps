@@ -42,7 +42,7 @@ Dar de alta y baja nodos Edge
 
 Poder ver que nodos pueden crearse en los proveedores cloud: tipos de máquina, recursos, costes, etc. Además, es interesante poder filtrar o buscar tipos de máquinas que cumplan ciertos requistios de HW y CPU.
 
-## Creación del cluster
+### Creación del cluster
 
 **011 - El cluster habrá que crear**
 
@@ -66,13 +66,13 @@ Permitir al usuario revisar el estado del/los clusters y el consumo de los recur
 
 Permitir al usuario desplegar una aplicación en el cluster.
 
-### ¿Qué os damos? 
+## ¿Qué os damos? 
 A los equipos interesados en participar, os dejaremos:
 - Una Service Account para poder crear y gestionar máquinas en `Google Cloud` (Cloud Engine)
 - Una API Key para poder crear y gestionar máquinas en `Amazon Web Services` (EC2)
 - Acceso a una API de LLM para que podáis generar y procesar texto natural 
 
-### Consideraciones
+## Consideraciones
 Queda totalmente prohibido compartir la clave que se os asigne con otros grupos.
 
 Procurad crear todas las máquinas en regiones europeas.
@@ -102,6 +102,20 @@ Esto os da una clave privada (con el nombre que indiquéis) y una pública (el n
 ```sh
 ssh -i <archivo> username@IP-DE-LA-MÁQUINA
 ```
+
+### Clusters
+```arduino
+[AWS]          [Azure]          [GCP]
+ Client VM     Client VM       Client VM
+      \           |              /
+       \          |             /
+        \         |            /
+            Master Node (VM)
+```
+- [Docker Swarm](https://docs.docker.com/engine/swarm/)
+- [Nomad](https://developer.hashicorp.com/nomad)
+- [K3s](https://k3s.io/)
+- [K8s (Kubernetes)](https://kubernetes.io/)
 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1280px-Google_Cloud_logo.svg.png" width="300"/>
