@@ -156,8 +156,7 @@ A més, teniu uns exemples ChatGPT made perquè pugueu provar sense tornar-vos b
 
 ## AWS
 <img src="https://miro.medium.com/v2/resize:fit:1200/1*neG4D9C8UcJvNn6bverfIA.png" width="300"/>
-Amazon Elastic Compute Cloud (Amazon EC2) és un servei web que et permet disposar de capacitat de computació escalable per crear i desplegar els teus sistemes de programari.
-[+ info](https://docs.aws.amazon.com/ec2/)
+Amazon Elastic Compute Cloud (Amazon EC2) és un servei web que et permet disposar de capacitat de computació escalable per crear i desplegar els teus sistemes de programari. (https://docs.aws.amazon.com/ec2/).
 
 Per començar, pots utilitzar la Consola d’Administració d’AWS per familiaritzar-te amb l’entorn: crear una imatge (AMI), llançar una màquina virtual, gestionar seguretat, etc. Un cop entenguis com funciona tot plegat des de la consola, el següent pas natural és automatitzar aquestes tasques amb el teu llenguatge de programació preferit.
 
