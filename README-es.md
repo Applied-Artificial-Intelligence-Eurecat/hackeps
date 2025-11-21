@@ -13,16 +13,10 @@
 ## Índice
 - [El reto 🔎](#el-reto-)
 - [Objetivos](#objetivos)
-- [Gestión de dispositivos](#gestión-de-dispositivos)
-- [Creación del cluster](#creación-del-cluster)
-- [Monitorización y despliegue](#monitorización-y-despliegue)
 - [¿Qué os damos?](#qué-os-damos)
 - [Consideraciones](#consideraciones)
 - [Documentación e información](#documentación-e-información)
-- [Clusters](#clusters)
 - [Ganadores 🏅](#ganadores-)
-- [¿Qué se valorará?](#qué-se-valorará)
-- [El premio 🤑](#el-premio-)
 
 # El reto 🔎
 

@@ -13,16 +13,10 @@
 ## Índex
 - [El repte 🔎](#el-repte-)
 - [Objectius](#objectius)
-- [Gestió de dispositius](#gestió-de-dispositius)
-- [Creació del clúster](#creació-del-clúster)
-- [Monitorització i desplegament](#monitorització-i-desplegament)
 - [Què us donem?](#què-us-donem)
 - [Consideracions](#consideracions)
 - [Documentació i informació](#documentació-i-informació)
-- [Clústers](#clústers)
 - [Guanyadors 🏅](#guanyadors-)
-- [Què es valorarà?](#què-es-valorarà)
-- [El premi 🤑](#el-premi-)
 
 # El repte 🔎
 
