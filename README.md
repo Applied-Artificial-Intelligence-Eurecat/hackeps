@@ -9,6 +9,21 @@
 </h1>
 
 -----
+
+## Índex
+- [El repte 🔎](#el-repte-)
+- [Objectius](#objectius)
+- [Gestió de dispositius](#gestió-de-dispositius)
+- [Creació del clúster](#creació-del-clúster)
+- [Monitorització i desplegament](#monitorització-i-desplegament)
+- [Què us donem?](#què-us-donem)
+- [Consideracions](#consideracions)
+- [Documentació i informació](#documentació-i-informació)
+- [Clústers](#clústers)
+- [Guanyadors 🏅](#guanyadors-)
+- [Què es valorarà?](#què-es-valorarà)
+- [El premi 🤑](#el-premi-)
+
 # El repte 🔎
 
 Google Cloud, Amazon Web Services, Microsoft Azure... grans proveïdors que poden acabar fallant, i ho fan (alguns més que d'altres 😶‍🌫️). I en aquest moment, tothom hagués desitjat no dependre només d'un. 

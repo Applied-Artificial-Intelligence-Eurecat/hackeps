@@ -9,6 +9,20 @@
 </h1>
 
 -----
+
+## Table of Contents
+- [Challenge 🔎](#the-challenge-)- [Objectives](#objectives)
+- [Device Management](#device-management)
+- [Cluster Creation](#cluster-creation)
+- [Monitoring and Deployment](#monitoring-and-deployment)
+- [What We Provide](#what-we-provide)
+- [Considerations](#considerations)
+- [Documentation and Information](#documentation-and-information)
+- [Clusters](#clusters)
+- [Winners 🏅](#winners-)
+- [Evaluation](#evaluation)
+- [The Prize 🤑](#the-prize-)
+
 # The challenge 🔎
 
 Google Cloud, Amazon Web Services, Microsoft Azure... big providers that may eventually fail, and they do (some more than others 😶‍🌫️). And in that moment, everyone wishes they didn't depend on just one. 

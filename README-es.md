@@ -9,6 +9,21 @@
 </h1>
 
 -----
+
+## Índice
+- [El reto 🔎](#el-reto-)
+- [Objetivos](#objetivos)
+- [Gestión de dispositivos](#gestión-de-dispositivos)
+- [Creación del cluster](#creación-del-cluster)
+- [Monitorización y despliegue](#monitorización-y-despliegue)
+- [¿Qué os damos?](#qué-os-damos)
+- [Consideraciones](#consideraciones)
+- [Documentación e información](#documentación-e-información)
+- [Clusters](#clusters)
+- [Ganadores 🏅](#ganadores-)
+- [¿Qué se valorará?](#qué-se-valorará)
+- [El premio 🤑](#el-premio-)
+
 # El reto 🔎
 
 Google Cloud, Amazon Web Services, Microsoft Azure...  grandes proveedores que pueden acabar fallando, y lo hacen (algunos más que otros 😶‍🌫️). Y en ese momento, todo el mundo hubiese deseado no depender de uno solo. 
