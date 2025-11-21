@@ -11,12 +11,17 @@
 -----
 
 ## Índice
-- [El reto 🔎](#el-reto-)
-- [Objetivos](#objetivos)
-- [¿Qué os damos?](#qué-os-damos)
-- [Consideraciones](#consideraciones)
-- [Documentación e información](#documentación-e-información)
-- [Ganadores 🏅](#ganadores-)
+  - [El reto 🔎](#el-reto-)
+    - [Objetivos](#objetivos)
+    - [¿Qué os damos?](#qué-os-damos)
+    - [Consideraciones](#consideraciones)
+  - [Documentación e información](#documentación-e-información)
+    - [Clusters](#clusters)
+    - [Google Cloud](#GCP)
+    - [Amazon](#AWS)
+  - [Ganadores 🏅](#ganadores-)
+    - [¿Qué se valorará?](#qué-se-valorará)
+    - [El premio 🤑](#el-premio-)
 
 # El reto 🔎
 
@@ -100,7 +105,7 @@ Todo aviso muy importante tiene una historia detrás
 
 ![](https://i.imgflip.com/aaq9wn.jpg)
 
-## Documentación e información
+# Documentación e información
 Podéis conectaros a una máquina vía [**SSH**](https://www.cloudflare.com/es-es/learning/access-management/what-is-ssh/). Además de conectaros por "usuario y contraseña", también podéis registrar una clave SSH que podéis generar con:
 
 ```sh
@@ -112,7 +117,7 @@ Esto os da una clave privada (con el nombre que indiquéis) y una pública (el n
 ssh -i <archivo> username@IP-DE-LA-MÁQUINA
 ```
 
-### Clusters
+## Clusters
 ```arduino
 [AWS]          [Azure]          [GCP]
  Client VM     Client VM       Client VM
@@ -126,7 +131,7 @@ ssh -i <archivo> username@IP-DE-LA-MÁQUINA
 - [K3s](https://k3s.io/)
 - [K8s (Kubernetes)](https://kubernetes.io/)
 
-
+## GCP
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1280px-Google_Cloud_logo.svg.png" width="300"/>
 
 En Google Cloud Platform podeis utilizar linea de comandos, y necesitareis instalar y configurar [`gcloud`](https://docs.cloud.google.com/sdk/docs/install).
@@ -148,7 +153,7 @@ Además, tenéis unos ejemplos ChatGPT made para que podáis probar sin volveros
 - [Python](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/python)
 - [Java](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/java)
 
-
+## AWS
 <img src="https://miro.medium.com/v2/resize:fit:1200/1*neG4D9C8UcJvNn6bverfIA.png" width="300"/>
 
 

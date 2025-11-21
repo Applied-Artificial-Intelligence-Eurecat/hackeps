@@ -11,12 +11,17 @@
 -----
 
 ## Índex
-- [El repte 🔎](#el-repte-)
-- [Objectius](#objectius)
-- [Què us donem?](#què-us-donem)
-- [Consideracions](#consideracions)
-- [Documentació i informació](#documentació-i-informació)
-- [Guanyadors 🏅](#guanyadors-)
+  - [El repte 🔎](#el-repte-)
+    - [Objectius](#objectius)
+    - [Què us donem?](#què-us-donem)
+    - [Consideracions](#consideracions)
+  - [Documentació i informació](#documentació-i-informació)
+    - [Clústers](#clústers)
+    - [Google Cloud](#GCP)
+    - [Amazon](#AWS)
+  - [Guanyadors 🏅](#guanyadors-)
+    - [Què es valorarà?](#què-es-valorarà)
+    - [El premi 🤑](#el-premi-)
 
 # El repte 🔎
 
@@ -100,7 +105,7 @@ Tot avís molt important té una història al darrere
 
 ![](https://i.imgflip.com/aaq9wn.jpg)
 
-## Documentació i informació
+# Documentació i informació
 Podeu connectar-vos a una màquina via [**SSH**](https://www.cloudflare.com/es-es/learning/access-management/what-is-ssh/). A més de connectar-vos per "usuari i contrasenya", també podeu registrar una clau SSH que podeu generar amb:
 
 ```sh
@@ -112,7 +117,7 @@ Això us dóna una clau privada (amb el nom que indiqueu) i una pública (el nom
 ssh -i <arxiu> username@IP-DE-LA-MÀQUINA
 ```
 
-### Clústers
+## Clústers
 ```arduino
 [AWS]          [Azure]          [GCP]
  Client VM     Client VM       Client VM
@@ -126,7 +131,7 @@ ssh -i <arxiu> username@IP-DE-LA-MÀQUINA
 - [K3s](https://k3s.io/)
 - [K8s (Kubernetes)](https://kubernetes.io/)
 
-
+## GCP
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1280px-Google_Cloud_logo.svg.png" width="300"/>
 
 A Google Cloud Platform podeu utilitzar línia de comandes, i necessitareu instal·lar i configurar [`gcloud`](https://docs.cloud.google.com/sdk/docs/install).
@@ -149,6 +154,7 @@ A més, teniu uns exemples ChatGPT made perquè pugueu provar sense tornar-vos b
 - [Java](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/java)
 
 
+## AWS
 <img src="https://miro.medium.com/v2/resize:fit:1200/1*neG4D9C8UcJvNn6bverfIA.png" width="300"/>
 
 

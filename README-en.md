@@ -10,20 +10,29 @@
 
 -----
 
-## Table of Contents
-- [Challenge 🔎](#the-challenge-)- [Objectives](#objectives)
-- [Device Management](#device-management)
-- [What We Provide](#what-we-provide)
-- [Considerations](#considerations)
+- [Challenge 🔎](#the-challenge-)
+  - [Objectives](#objectives)
+  - [What We Provide](#what-we-provide)
+  - [Considerations](#considerations)
 - [Documentation and Information](#documentation-and-information)
+  - [Clusters](#clusters)
+  - [Google Cloud](#GCP)
+  - [Amazon](#AWS)
 - [Winners 🏅](#winners-)
+  - [Evaluation](#evaluation)
+  - [The Prize 🤑](#the-prize-)
+
+-----
 
 # The challenge 🔎
 
 Google Cloud, Amazon Web Services, Microsoft Azure... big providers that may eventually fail, and they do (some more than others 😶‍🌫️). And in that moment, everyone wishes they didn't depend on just one. 
 That's why this year we propose helping that poor soul who made the mistake of trusting only one of them, and create a platform to deploy clusters of machines across different providers 🤙 Software Development, AI, DevOps... in this challenge you'll be able to practice all kinds of disciplines to reach your goal 😎
 And let's think locally: who doesn't have at home a server with 8 CPUs and 16 GB of RAM waiting to be used to deploy things?
+
+
 ## Objectives
+
 The final objective is easy to say: **a platform to create multi-cloud-edge clusters**, but achieving it can be a bit more overwhelming.
 
 For this reason, we suggest some functional points, and as we say every year: **NO**, you don't need to do all of them (it's a hackathon), and you are free to give your platform your own original approach — we only suggest ideas ;) And if you want to follow the ideas, you don't need to do them in this order either... If something doesn't work out, try moving on to the next one.
@@ -99,8 +108,8 @@ Please make sure to EXCLUDE credentials from the public GitHub repository. You c
 Every important warning has a story behind it
 
 ![](https://i.imgflip.com/aaq9wn.jpg)
-
-## Documentation and Information
+---
+# Documentation and Information
 You can connect to a machine via [**SSH**](https://www.cloudflare.com/es-es/learning/access-management/what-is-ssh/). Besides connecting via "username and password", you can also register an SSH key that you can generate with:
 
 ```sh
@@ -112,7 +121,7 @@ This gives you a private key (with the name you specify) and a public one (the n
 ssh -i <file> username@MACHINE-IP
 ```
 
-### Clusters
+## Clusters
 ```arduino
 [AWS]          [Azure]          [GCP]
  Client VM     Client VM       Client VM
@@ -127,6 +136,7 @@ ssh -i <file> username@MACHINE-IP
 - [K8s (Kubernetes)](https://kubernetes.io/)
 
 
+## GCP
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1280px-Google_Cloud_logo.svg.png" width="300"/>
 
 In Google Cloud Platform you can use the command line, and you'll need to install and configure [`gcloud`](https://docs.cloud.google.com/sdk/docs/install).
@@ -148,10 +158,10 @@ Additionally, you have some ChatGPT-made examples so you can test without going 
 - [Python](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/python)
 - [Java](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/java)
 
-
+## AWS
 <img src="https://miro.medium.com/v2/resize:fit:1200/1*neG4D9C8UcJvNn6bverfIA.png" width="300"/>
 
-
+---
 # Winners 🏅
 This time, two winning teams will be selected:
 - **Winners:** A prize for the team that achieves the most balanced solution between quality, execution, and idea
