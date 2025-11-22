@@ -1,4 +1,9 @@
-**Rest Processor App**
+**DUMMY APP**
+
+Os traemos una aplicación de pruebas que puede ser muy útil en vuestra travesía por el cloud-edge continuum! 
+
+<img width="1900" height="923" alt="image" src="https://github.com/user-attachments/assets/a04c8577-d7e4-4f93-8dff-3c61507ef745" />
+
 
 Esta aplicación consta de un controlador que recibesolicitudes de “work” y de un número variable de workers que procesan dichassolicitudes.
 
