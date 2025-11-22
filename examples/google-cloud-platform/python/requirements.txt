@@ -1,0 +1,2 @@
+google-cloud-compute==1.40.0
+

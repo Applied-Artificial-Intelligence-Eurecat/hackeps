@@ -4,128 +4,198 @@
 
 <h1 align="center">
 
-🔬 La IA ens deixarà sense treball i haurem de plantar tomàquets i criar gallines 🌱
+💫  NebulOuS: El teu propi clúster Multi-Cloud-edge ☁️
 
 </h1>
 
 -----
 
-# El repte 👨‍🌾👩‍🌾
+## Índex
+  - [El repte 🔎](#el-repte-)
+    - [Objectius](#objectius)
+    - [Què us donem?](#què-us-donem)
+    - [Consideracions](#consideracions)
+  - [Documentació i informació](#documentació-i-informació)
+    - [Clústers](#clústers)
+    - [Google Cloud](#GCP)
+    - [Amazon](#AWS)
+  - [Guanyadors 🏅](#guanyadors-)
+    - [Què es valorarà?](#què-es-valorarà)
+    - [El premi 🤑](#el-premi-)
 
-Aquest any, apostem per un problema molt més ampli que inclogui no només la part de data scientist de la unitat d'Applied Artificial Intelligence, sinó que també requereixi experimentar amb la programació, l'ús de dispositius _Internet of Things_,  la gestió de dades i la seva visualització ✨
+# El repte 🔎
+
+Google Cloud, Amazon Web Services, Microsoft Azure... grans proveïdors que poden acabar fallant, i ho fan (alguns més que d'altres 😶‍🌫️). I en aquest moment, tothom hagués desitjat no dependre només d'un. 
+Per això, aquest any us proposem ajudar aquell pobre diable que es va equivocar confiant només en un d'ells, i creeu una plataforma per crear clústers de màquines en diferents proveïdors 🤙 Desenvolupament de Programari, IA, DevOPS... en aquest repte podreu practicar totes les disciplines per aconseguir el vostre objectiu 😎
+A més, pensem en allò local: qui no té per casa un servidor de 8 CPU i 16 GB de RAM esperant ser aprofitat per desplegar coses?
+## Objectius
+L'objectiu final pot ser fàcil de dir: **una plataforma per a la creació de clústers-multicloud-edge**, però aconseguir-ho pot ser una mica més aclaparador.
+
+Per això, us suggerim alguns punts funcionals, que com diem cada any: **NO**, no cal que feu tots els punts (és una hackató), i sou lliures de donar-li el vostre propi enfocament original a la plataforma, nosaltres només suggerim idees ;) I si voleu seguir les idees, tampoc cal que les feu en aquest ordre... Si alguna cosa no us surt, intenteu passar a la següent.
+
+I si no... Pregunteu!
+<h4 align="center">
+
+![](https://camo.githubusercontent.com/abee1b0ea2fb94ffd75986431a093a0f22aeb534a70d11b3fa493f2eda877355/68747470733a2f2f6d656469612e74656e6f722e636f6d2f616556383058443443536741414141642f677569646c696e65732d706972617465732d6f662d7468652d63617269626265616e2e676966)
+
+_El Codi és més aviat el que en diries "directrius" que regles de veritat._
+</h4>
+
+### Gestió de dispositius
+**000 - Hola? Sóc jo!**
+
+Aconseguir connectar amb l'API de GCP i AWS a partir de les credencials que us facilitarem, i fins i tot permetre múltiples comptes registrats.
+
+**001 - Cloud? Això és només l'ordinador d'un altre!**
+
+A més del cloud, també és interessant poder comptar amb dispositius _edge_, com el vostre propi ordinador (o una VM), raspberries, etc. Tenir una llista d'aquests dispositius i poder donar-los d'alta i baixa també pot ser interessant. 
+Donar d'alta i baixa nodes Edge 
+> Si voleu connectar-vos per SSH a raspberries o ordinadors de companys, a part de compte amb els tallafocs, useu xarxa des del mòbil, ja que Eduroam sol tenir el mal costum de bloquejar connexions d'aquest tipus.
+
+**010 - Què hi ha al cloud?**
+
+Poder veure quins nodes poden crear-se en els proveïdors cloud: tipus de màquina, recursos, costos, etc. A més, és interessant poder filtrar o buscar tipus de màquines que compleixin certs requisits de HW i CPU.
+
+### Creació del clúster
+
+**011 - El clúster s'haurà de crear**
+
+A partir d'una necessitat de X màquines amb Y recursos cada màquina, caldrà triar en quin proveïdor cloud i quines instàncies desplegar, o quins dispositius edge utilitzar.
+
+> És totalment vàlid permetre a l'usuari triar manualment quines instàncies utilitzar, encara que també podeu intentar triar-ho "automàticament" a partir de mètriques que considereu vosaltres (preu? ping? ubicació?)
+
+**100 - EMBUSTERO! Això no és un clúster**
+
+Un cop triats els nodes _edge_ i/o creades les màquines cloud, s'hauria d'instal·lar i configurar (automàticament) en elles el programari necessari perquè actuïn com a clúster.
+
+> Algunes opcions, de menys a més complexes, són Nomad, Docker Swarm, K3s o Kubernetes (però podeu usar el que vulgueu, com si voleu desenvolupar alguna cosa pròpia)
+
+### Monitorització i desplegament
+
+**101 - Tot va bé, molt bé, regular... malament!**
+
+Permetre a l'usuari revisar l'estat del/dels clústers i el consum dels recursos dels nodes.
+
+**110 - I això per a què serveix?**
+
+Permetre a l'usuari desplegar una aplicació en el clúster.
+
+## Què us donem? 
+Als equips interessats a participar, us deixarem:
+- Un Service Account per poder crear i gestionar màquines a `Google Cloud` (Cloud Engine)
+- Una API Key per poder crear i gestionar màquines a `Amazon Web Services` (EC2)
+- Accés a una API de LLM perquè pugueu generar i processar text natural 
+
+## Consideracions
+Queda totalment prohibit compartir la clau que se us assigni amb altres grups.
+
+Procureu crear totes les màquines en regions europees.
+
+Per seguretat, no es permet crear VMs amb gràfiques associades.
+
+Per evitar-vos problemes, a Google Cloud Platform, es permet connexió des de fora des de qualsevol IP cap a tots els ports de les màquines que creeu.
 
 
-## Les missions 🍅
-Per a familiaritzar-nos amb les plantes per a quan hàgim d'anar a plantar tomàquets, hem fundat el Departament Vegetal d'AAI i definit un pla d'execució format per sis missions:
+### MOLT, MOLT, MOLTÍSSIM IMPORTANT
+Si us plau, assegureu-vos d'EXCLOURE les credencials del repositori públic de GitHub. Podeu crear un fitxer `.gitignore` a la base del vostre projecte i afegir:
+```.gitignore
+**.json
+```
+Tot avís molt important té una història al darrere
 
-- 🌼 **Missió Margarida**
-- 🌷 **Missió Tulipa**
-- 🎋 **Missió Bambú**
-- 🥦 **Missió Bròcoli**
-- 🥑 **Missió Alvocat**
-- 🍑 **Missió Préssec**
+![](https://i.imgflip.com/aaq9wn.jpg)
 
-A excepció de la `🌼 MISSIÓ MARGARITA`, aquestes missions no són necessàriament seqüencials: podeu fer-les de manera paral·lela entre els companys, o anar saltant d'una a una altra en funció de la vostra inspiració... Fins i tot podeu **no fer algunes** i **inventar-vos-en** d'altres.
+# Documentació i informació
+Podeu connectar-vos a una màquina via [**SSH**](https://www.cloudflare.com/es-es/learning/access-management/what-is-ssh/). A més de connectar-vos per "usuari i contrasenya", també podeu registrar una clau SSH que podeu generar amb:
 
-No dubteu en venir a l'ambaixada del Departament Vegetal d'AAI (conegut com les taules de la HackEPS, on es troben els representants d'Eurecat) per validar les vostres idees si teniu algun dubte sobre si encaixa dins de la idea general del repte.
+```sh
+ssh-keygen -t rsa -b 4096 -C "username"
+```
 
-La `🌼 MISSIÓ MARGARIDA` **ÉS OBLIGATÒRIA**.
+Això us dóna una clau privada (amb el nom que indiqueu) i una pública (el nom que indiqueu + `.pub`). En crear un equip tant a AWS com a GCP podeu indicar-li la clau pública perquè pugueu connectar-vos amb SSH després:
+```sh
+ssh -i <arxiu> username@IP-DE-LA-MÀQUINA
+```
 
-![](https://media.tenor.com/aeV80XD4CSgAAAAd/guidlines-pirates-of-the-caribbean.gif)
+## Clústers
+```arduino
+[AWS]          [Azure]          [GCP]
+ Client VM     Client VM       Client VM
+      \           |              /
+       \          |             /
+        \         |            /
+            Master Node (VM)
+```
+- [Docker Swarm](https://docs.docker.com/engine/swarm/)
+- [Nomad](https://developer.hashicorp.com/nomad)
+- [K3s](https://k3s.io/)
+- [K8s (Kubernetes)](https://kubernetes.io/)
 
-No patiu! 🥴 Sabem que conteu només amb 24h… No valorem exclusivament el nombre de missions que completeu, sinó que aprengueu del repte i sigueu capaços de ser prou analítics per aportar una solució i un punt de vista als problemes que se us plantegen.
+## GCP
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1280px-Google_Cloud_logo.svg.png" width="300"/>
+
+A Google Cloud Platform podeu utilitzar línia de comandes, i necessitareu instal·lar i configurar [`gcloud`](https://docs.cloud.google.com/sdk/docs/install).
+També teniu biblioteques específiques per a gairebé cada llenguatge de programació:
+- [Go](https://docs.cloud.google.com/go/docs)
+- [JavaScript](https://docs.cloud.google.com/nodejs/docs)
+- [Python](https://docs.cloud.google.com/python/docs)
+- [Java](https://docs.cloud.google.com/java/docs)
+- [C++](https://docs.cloud.google.com/cpp/docs)
+- [C#](https://docs.cloud.google.com/dotnet/docs)
+
+Teniu exemples de com usar les biblioteques a [el compte de Google Cloud Platform de Github](https://github.com/GoogleCloudPlatform).
+En concret, el _producte_ que s'utilitza és [Compute Engine](https://cloud.google.com/products/compute?hl=es)
+
+Es recomana que poseu l'idioma de la documentació en anglès, ja que les versions al castellà són bastant deficients.
+
+A més, teniu uns exemples ChatGPT made perquè pugueu provar sense tornar-vos bojos en aquest mateix repositori, a `examples\google-cloud-platform`. Reviseu el README associat al llenguatge que vulgueu provar.
+
+- [Python](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/python)
+- [Java](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/java)
 
 
-### 🌼 MISSIÓ MARGARIDA 
-Abans de poder començar cap tasca, cal obtenir dades. 
+## AWS
+<img src="https://miro.medium.com/v2/resize:fit:1200/1*neG4D9C8UcJvNn6bverfIA.png" width="300"/>
+Amazon Elastic Compute Cloud (Amazon EC2) és un servei web que et permet disposar de capacitat de computació escalable per crear i desplegar els teus sistemes de programari. (https://docs.aws.amazon.com/ec2/).
 
-A les nostres instal·lacions tenim les primeres plantes enviant les dades a un servidor d'Eurecat mitjançant el procol MQTT a temps real. En aquest servidor es troba un broker Mosquitto. Demaneu a la taula d’Eurecat que us donin un usuari i contrasenya per a poder fer la connexió i escoltar els missatges que transmet la planta al topic `hackeps/eurecat`
+Per començar, pots utilitzar la Consola d’Administració d’AWS per familiaritzar-te amb l’entorn: crear una imatge (AMI), llançar una màquina virtual, gestionar seguretat, etc. Un cop entenguis com funciona tot plegat des de la consola, el següent pas natural és automatitzar aquestes tasques amb el teu llenguatge de programació preferit.
 
-El Departament Vegetal necessita poder guardar les dades d'alguna forma per la posterior visualització i anàlisi.
+- [Python](https://github.com/boto/boto3) - [Exemples de codi](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/ec2-examples.html)
+- [Java](https://github.com/aws/aws-sdk-java-v2)
+- [O molts d'altres](https://builder.aws.com/build/tools)
 
-Necessiteu ajuda? No sabeu per on començar? Us falten les credencials? Pregunteu per slack o visiteu-nos!
+# Guanyadors 🏅
+En aquesta ocasió, s'anomenaran dos equips guanyadors:
+- **Guanyadors:** Un premi a l'equip que aconsegueixi una solució més equilibrada entre qualitat, execució i idea
+- **Joves promeses:** Premi destinat a equips els membres dels quals no tinguin coneixements previs, que presentin una solució ben ideada i demostrin la seva capacitat d'aprenentatge.
 
-### 🌷 MISSIÓ TULIPA
-Un cop disposeu d'un sistema per guardar les dades a temps real, sol·liciteu al Departament Vegetal d'AAI d'Eurecat el _Ultimate SensorPlanta Kit 2023_.
+### Què es valorarà? 
+Es valorarà tant la demo presentada durant l'exposició final com tota la informació inclosa en la publicació de Devpost (recordeu que podeu actualitzar-la fins i tot després del tancament). A partir d'això avaluarem, **principalment**:
 
-Aquest kit conté el material necessari per a poder connectar una nova planta a l'hort digital i enviar les dades de la planta al topic `/hackeps/{id assignat a l'equip}`
+**Per al primer premi**
+- **Idees implementades:** Es tindrà en compte el nivell d'originalitat, les propostes que vagin més enllà del bàsic, els fluxos plantejats i qualsevol funcionalitat nova que resulti útil o pràctica.
 
-Envieu les dades disponibles de la nova planta al servidor i enregistreu-les juntament amb la resta de dades de l'hort.
+- **Funcionalitat:** Com de bé funciona el projecte en el seu conjunt, l'estat de cada part, i la qualitat de la integració entre elles.
 
-### 🎋 MISSIÓ BAMBÚ
-Per culpa d’algun becari >:(, les dades que vam enregistrar tenen alguns errors, ja que els sensors no funcionaven correctament. Identifiqueu *quines 2 variables* tenen errors al nostre dataset! Segurament estan lligades. Hi ha dos tipus d'errors de lectura, un associat a un sensor, i un altre associat a dos. Per a no perdre tot aquest progrés, la unitat de nyaps va guardar aquestes dades en un dataset **data/train.csv**. Hi trobaràs pocs errors, així que no cal que implementis cap model d'aprenentatge automàtic. Però vigila! Potser que a la missió bròcoli 🥦 et vagi bé utilitzar aquestes dades corregides.
+- **Arquitectura:** Valorarem si l'arquitectura proposada tindria sentit en un entorn real, si és escalable i si està ben plantejada.
 
-Per poder entregar aquesta missió, haureu de donar-nos el csv corregit amb les dades corregides, i així tindrem els nostres agrònoms contents per futurs congressos de monitorització de plantes. Deixeu-lo al vostre repositori `data/<team>-anomaly.csv`.
+- **Tecnologies:** No importa el llenguatge en si, sinó les tecnologies complementàries usades: frameworks web (React, Angular, Vue…), bases de dades (Mongo, Postgres, MariaDB…), contenidors (Docker), etc.
 
-### 🥦 MISSIÓ BRÒCOLI
+- **Qualitat del codi:** Tot i ser una hackató, es tindrà en compte evitar abusar de hardcoding, mantenir unes mínimes bones pràctiques (indentació, tipat en llenguatges no estrictament tipats, organització del projecte…).
 
-El departament vegetal som uns visionaris i volem saber quina serà la humitat del terra, humitat de l'aire i temperatura ambient de la nostra planta en els catorze dies següents de l'horitzó de temps del dataset. Això vol dir que heu de fer un forecast de com seran aquestes dades en 14 dies vista! Podeu utilitzar dades externes per ajudar, però sempre consdierant que no tindreu aquestes dades externes tampoc després del final del dataset. No tot són flors i violes.
+**Per a joves promeses**
+- **Idees implementades:** Igual que en la categoria general, es valorarà l'originalitat i l'aportació de funcionalitats útils més enllà del bàsic.
 
-Per poder entregar aquesta missió, haureu de donar-nos el csv amb humitat del terra, humitat de l'aire i temperature ambient amb el mateix format de dates que el dataset **data/train.csv**. Deixeu el csv al vostre repositori `data/<team>-forecast.csv`.
+- **Aprenentatge:** Si hi havia o no experiència prèvia, què heu après en aquestes 24 hores, els principals reptes trobats i com els heu solucionat.
 
-### 🥑 MISSIÓ ALVOCAT
-L'obsessió per programar preocupa al Departament Vegetal, ja que les plantes es moriran de set si continua aquesta dinàmica! Com que agafar una regadora i regar-les regularment no sembla ser una opció, s'ha fet entrega d'una bomba d’aigua perquè pugueu automatitzar-ho. 
+- **Treball en equip:** Com us heu organitzat, repartiment de tasques i dinàmica de col·laboració.
 
-Afegiu la bomba d'aigua al sistema i habiliteu algun mecanisme per a regar la planta.
+- **Qualitat del codi:** Mateixos criteris que en la categoria principal: evitar hardcoding innecessari i mantenir un mínim d'ordre i coherència.
 
-### 🍑 MISSIÓ PRÉSSEC
-Interactuar amb les dades és gairebé tan important com tenir-les. El departament de desenvolupament d'interfícies atractives, col·laboradors habituals del departament vegetal d'AAI, ha estat subcontractat per idear una manera de poder explotar aquestes dades, però estan més secs d'idees que una noguera al gener.
+- **Presentació de la idea:** Claredat en explicar la proposta, el seu enfocament i el seu objectiu.
 
-Ideeu, dissenyeu i desenvolupeu eines relacionades amb la cura de l'hort digital, que idealment facin ús de les dades recollides en qualsevol de les altres missions.
 
-## Com començar?
+## El premi 🤑
 
-### Recursos 📦
-Inicialment disposareu d'accés a un Broker MQTT:
-> IP: 84.88.76.18
->
-> Port: 1883
->
-> Usuari i contrasenya: _Vine a preguntar!_
-
-Topics MQTT:
-> `hackeps/eurecat`
->
-> `hackeps/{Nom assignat a l'equip}`
-
-Una vegada avançada la missió margarida, podreu sol·licitar el _Ultimate SensorPlanta Kit 2023_ a la nostra taula, el qual constarà de:
-|    **ESP3288**   	|      **Cable MicroUSB**     	|           **Planta**          	|
-|:----------------:	|:---------------------------:	|:-----------------------------:	|
-|    **Díodes**    	|        **Protoboard**       	|       **Bomba d'aigua**       	|
-| **Resistències** 	| **Convertidor de Voltatge** 	| **Diversos sensors i cables** 	|
-
-### Recomanacions
-Us recomanem que feu servir el llenguatge de programació amb el que estigueu més còmodes. Per programar el microcontrolador, podreu fer servir C, C++, Micro-Python, Lua o JavaScript. Per la visualització de dades, podeu fer servir python, juntament amb la utilització de [notebooks](https://jupyter.org/).
-
-Aquestes són algunes biblioteques (**LIBRARY != LLIBRERIA**) i eines que podríeu utilitzar per a dur a terme les tasques que es presenten en les missions:
-
-Per la connexió al broker MQTT:
-- [MQTTX](https://mqttx.app/)
-- [Eclipse PAHO (biblioteca MQTT per a molts llenguatges populars)](https://eclipse.dev/paho/)
-
-Pel desenvolupament del Microcontrolador:
-- [Arduino IDE](https://www.arduino.cc/en/software)
-- [ESP8266 Datasheet (Summary)](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/documentation/NodeMCU%20Documentation.pdf)
-- [ESP8266 Technical Reference](https://www.espressif.com/sites/default/files/documentation/esp8266-technical_reference_en.pdf) 
-
-Per a tractar dades
-- [pandas](https://pandas.pydata.org/)
-- [numpy](https://numpy.org/)
-- [statsmodels](https://www.statsmodels.org/)
-- [matplotlib](https://pypi.org/project/matplotlib/)
-
-AI:
-- [scikit-learn](https://scikit-learn.org/stable/index.html)
-- [xgboost](https://xgboost.readthedocs.io/en/stable/)
-- [pytorch](https://pytorch.org/)
-
-## La puntuació 👀
-
-Tindrem en compte l'originalitat de les solucions i de la presentació, el percentatge de missions complertes,
-l'eficàcia, l'eficiència, l'excel·lència i l'èxit en les solucions, el treball en equip, la comunicació i volem saber per què heu de ser l'equip guanyador.
-
-### El premi 🏆
-- 800€ pel 1r Premi
-- 200€ pel 2n Premi 
-
-Molta sort!
+- Xec Amazon per valor de 1000€ per al **primer premi**
+- Xec Amazon per valor de 200€ per al premi de **joves promeses**

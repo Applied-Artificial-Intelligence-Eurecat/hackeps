@@ -4,127 +4,191 @@
 
 <h1 align="center">
 
-🔬 AI Will Leave Us Jobless and We Will Have to Grow Tomatoes and Raise Chickens 🌱
+💫  NebulOuS: Tu propio cluster Multi-Cloud-edge ☁️
 
 </h1>
 
 -----
-# El reto 👨‍🌾👩‍🌾
- 
-Este año, apostamos por un problema mucho más amplio que incluya no solo la parte de data scientist de la unidad de Applied Artificial Intelligence, sino que también requiera experimentar en otros campos, como puede ser TODO.
 
-## Las misiones 🍅
-Para familiarizarnos con las plantas para cuando tengamos que ir a plantar tomates, hemos fundado el Departamento Vegetal de AAI y definido un plan de ejecución formado por seis misiones:
+## Índice
+  - [El reto 🔎](#el-reto-)
+    - [Objetivos](#objetivos)
+    - [¿Qué os damos?](#qué-os-damos)
+    - [Consideraciones](#consideraciones)
+  - [Documentación e información](#documentación-e-información)
+    - [Clusters](#clusters)
+    - [Google Cloud](#GCP)
+    - [Amazon](#AWS)
+  - [Ganadores 🏅](#ganadores-)
+    - [¿Qué se valorará?](#qué-se-valorará)
+    - [El premio 🤑](#el-premio-)
 
-- 🌼 **Misión Margarita**
-- 🌷 **Misión Tulipa**
-- 🎋 **Misión Bambú**
-- 🥦 **Misión Brócoli**
-- 🥑 **Misión Aguacate**
-- 🍑 **Misión Melocotón**
+# El reto 🔎
 
-Excepto la `🌼 MISIÓN MARGARITA`, estas misiones no son necesariamente secuenciales: podréis hacerlas de manera paralela entre los compañeros, o saltar de una a otra según su inspiración... Incluso podéis no hacer las que no os parezcan interesantes e inventaros otras.
+Google Cloud, Amazon Web Services, Microsoft Azure...  grandes proveedores que pueden acabar fallando, y lo hacen (algunos más que otros 😶‍🌫️). Y en ese momento, todo el mundo hubiese deseado no depender de uno solo. 
+Por eso, este año os proponemos ayudar a ese pobre diablo que se equivocó confiando solo en uno de ellos, y  creeis una plataforma para crear clusters de máquinas en distintos proveedores 🤙 Desarrollo de Software, IA, DevOPS... en este reto podréis practicar todas las disciplinas para conseguir vuestro objetivo 😎
+Además, pensemos en lo local: ¿quién no tiene por casa un servidor de 8 CPU y 16 GB de RAM esperando a ser aprovechado para desplegar cosas?
+## Objetivos
+El objetivo final puede ser fácil de decir: **una plataforma para creación de clusters-multicloud-edge**, pero lograrlo puede ser algo más abrumador.
 
-No dudéis en venir a la embajada del Departamento Vegetal de AAI (conocido como las mesas del pasillo) para validar sus ideas si tienen alguna duda sobre si alguna idea encaja dentro de la idea general del reto.
+Por ello, os sugerimos algunos puntos funcionales, que como decimos todos los años: **NO**, no hace falta que hagáis todos los puntos (es una hackathon), y sois libres darle vuestro propio enfoque original a la plataforma, nosotros solo sugerimos ideas ;) Y si queréis seguir las ideas, tampoco hace falta que las hagáis en este orden... Si algo no os sale, intentad pasar a lo siguiente.
 
-La `🌼 MISIÓN MARGARITA` **ES OBLIGATORIA**.
+Y sino.. ¡Preguntad!
+<h4 align="center">
 
-![](https://media.tenor.com/aeV80XD4CSgAAAAd/guidlines-pirates-of-the-caribbean.gif)
+![](https://camo.githubusercontent.com/abee1b0ea2fb94ffd75986431a093a0f22aeb534a70d11b3fa493f2eda877355/68747470733a2f2f6d656469612e74656e6f722e636f6d2f616556383058443443536741414141642f677569646c696e65732d706972617465732d6f662d7468652d63617269626265616e2e676966)
 
-¡Tranquilidad! 🥴 Sabemos que solo hay 24 horas... No valoramos exclusivamente el número de misiones completadas, sino también que aprendáis, la originalidad, y que seáis lo suficientemente analíticos para aportar una solución y un punto de vista a los problemas que surjan.
+_El Código es más bien lo que llamarías "directrices" que reglas de verdad._
+</h4>
 
+### Gestión de dispositivos
+**000 - ¿Hola? ¡Soy yo!**
 
-### 🌼 MISIÓN MARGARITA 
-Antes de poder empezar ninguna tarea, hay que obtener datos.
+Conseguir conectar con la API de GCP y AWS a partir de las credenciales que os facilitaremos, e incluso permitir múltiples cuentas registradas.
 
-En nuestras instalaciones tenemos una primera planta enviando los datos a un servidor de Eurecat mediante el protocolo MQTT en tiempo real. En este servidor se encuentra un broker Mosquitto. Solicitad en la mesa de Eurecat que les dé un usuario y contraseña para poder hacer la conexión y escuchar los mensajes que transmite la planta en el topic `hackeps/eurecat`
+**001 - ¿Cloud? ¡Eso es solo el ordenador de otro!**
 
-El Departamento Vegetal necesita poder guardar los datos de alguna forma para la posterior visualización y análisis.
+Además del cloud, también es interesante poder contar con dispositivos _edge_, como vuestro propio ordenador (o una VM), raspberries, etc. Tener una lista de estos dispositivos y poder darlos de alta-baja también puede ser interesante. 
+Dar de alta y baja nodos Edge 
+> Si queréis conectaros por SSH a raspberries u ordenadores de compañeros, a parte de cuidado con los firewalls, usad red desde el movil, ya que Eduroam suele tener la mala costumbre de bloquear conexiones de este tipo.
 
-### 🌷 MISIÓN TULIPA
-Con el sistema para guardar los datos en tiempo real listo, solicitad al Departamento Vegetal de AAI de Eurecat el _Ultimate SensorPlanta Kit 2023_.
+**010 - ¿Qué hay en el cloud?**
 
-Este kit contiene el material necesario para poder conectar una nueva planta al huerto digital y enviar los datos de la planta al topic `/hackeps/{id asignado al equipo}`
+Poder ver que nodos pueden crearse en los proveedores cloud: tipos de máquina, recursos, costes, etc. Además, es interesante poder filtrar o buscar tipos de máquinas que cumplan ciertos requistios de HW y CPU.
 
-Enviad los datos disponibles de la nueva planta al servidor y registradlos junto con el resto de datos de la planta anterior.
+### Creación del cluster
 
-### 🎋 MISIÓN BAMBÚ
-Por culpa de algún becario >:(, los datos que registramos tienen algunos errores, ya que los sensores no funcionaban correctamente. ¡Identifica cuáles 2 variables tienen errores en nuestro conjunto de datos! Seguramente están relacionadas. Hay dos tipos de errores de lectura, uno asociado a un sensor y otro asociado a dos. Para no perder todo este progreso, la unidad de chismes y desastres guardó estos datos en un conjunto de datos data/train.csv. Encontrarás pocos errores, así que no es necesario que implementes ningún modelo de aprendizaje automático. ¡Pero ten cuidado! Puede que en la misión del brócoli 🥦 te sea útil utilizar estos datos corregidos.
+**011 - El cluster habrá que crear**
 
-Para poder entregar esta misión, deberéis darnos el archivo CSV corregido con los datos corregidos, y así tendremos a nuestros agrónomos contentos para futuros congresos de monitorización de plantas. Déjalo en vuestro repositorio `data/<equipo>-anomaly.csv`.
+A partir de una necesidad de X máquinas con Y recursos cada máquina, habrá que elegir en que proveedor cloud y que instancias desplegar, o que dispositivos edge utilizar.
 
-### 🥦 MISSIÓ BRÓCOLI
+> Es totalmente válido permitir al usuario elegir manualmente que instancias utilizar, aunque también podéis intentar elegirlo "automáticamente" a partir de métricas que consideréis vosotros (¿precio? ¿ping? ¿ubicación?)
 
-El departamento vegetal somos unos visionarios y queremos saber cuál será la humedad del suelo, humedad del aire y temperatura ambiente de nuestra planta en los catorce días siguientes al horizonte de tiempo del conjunto de datos. ¡Esto significa que debéis hacer una previsión de cómo serán estos datos dentro de 14 días! Podéis utilizar datos externos para ayudar, pero siempre considerando que tampoco tendréis estos datos externos después del final del conjunto de datos. ¡No todo son flores!
+**100 - ¡EMBUSTERO! Esto no es un cluster**
 
-Para poder entregar esta misión, deberéis proporcionarnos el archivo CSV con la humedad del suelo, humedad del aire y temperatura ambiente en el mismo formato de fechas que el conjunto de datos data/train.csv. Dejad el CSV en vuestro repositorio `data/<equipo>-forecast.csv`
+Una vez elegidos los nodos _edge_ y/o creadas las máquinas cloud, se deberia instalar y configurar (automaticamente) en ellas el software necesario para que actuen como cluster.
 
+> Algunas opciones, de menos a mas complejas, son  Nomad, Docker Swarm, K3s o Kubernetes (pero podéis usar lo que queráis, como si queréis desarrollar algo propio)
 
-### 🥑 MISIÓN AGUACATE
-La obsesión por programar preocupa al Departamento Vegetal, ¡las plantas se morirán de sed si continúa esta dinámica! Como coger una regadera y regarlas regularmente no parece ser una opción, se ha entregado una mini bomba de agua para que podáis automatizarlo.
+### Monitorización y despliegue
 
-Agreguen la bomba de agua al sistema y habiliten algún mecanismo para regar la planta.
+**101 - Todo va bien, muy bien, regular... ¡mal!**
 
-### 🍑 MISIÓN MELOCOTÓN
-Interactuar con los datos es casi tan importante como tenerlos. El departamento de desarrollo de interfaces atractivas, colaboradores habituales del departamento vegetal de AAI, ha sido subcontratado para idear una manera de poder explotar estos datos, pero están más secos de ideas que un nogal en enero.
+Permitir al usuario revisar el estado del/los clusters y el consumo de los recursos de los nodos.
 
-Idead, diseñad y desarrollad herramientas relacionadas con el cuidado del huerto digital, que idealmente hagan uso de los datos recogidos en cualquiera de las otras misiones.
+**110 - ¿Y esto de que sirve?**
 
+Permitir al usuario desplegar una aplicación en el cluster.
 
-## ¿Cómo comenzar?
+## ¿Qué os damos? 
+A los equipos interesados en participar, os dejaremos:
+- Una Service Account para poder crear y gestionar máquinas en `Google Cloud` (Cloud Engine)
+- Una API Key para poder crear y gestionar máquinas en `Amazon Web Services` (EC2)
+- Acceso a una API de LLM para que podáis generar y procesar texto natural 
 
-### Recursos 📦
-Inicialmente tendréis acceso a un Broker MQTT:
-> IP: 84.88.76.18
->
-> Puerto: 1883
->
-> Usuario y contraseña: _¡Venid a preguntar!_
+## Consideraciones
+Queda totalmente prohibido compartir la clave que se os asigne con otros grupos.
 
-Temas MQTT:
-> `hort/plantes`
->
-> `hort/team/{Nombre asignado al equipo}`
+Procurad crear todas las máquinas en regiones europeas.
 
-Una vez avanzada la misión Margarita, podrán solicitar el _Ultimate SensorPlanta Kit 2023_ en nuestra mesa, que constará de:
-|    **ESP3288**   	|      **Cable MicroUSB**     	|           **Planta**          	|
-|:----------------:	|:---------------------------:	|:-----------------------------:	|
-|    **Díodos**    	|        **Protoboard**       	|       **Bomba de agua**       	|
-| **Resistencias** 	| **Convertidor de Voltaje** 	| **Varios sensores y cables** 	|
+Por seguridad, no se permite crear VMs con gráficas asociadas.
 
-### Recomendaciones
-Les recomendamos que utilicen el lenguaje de programación con el que se sientan más cómodos. Para programar el microcontrolador, pueden usar C, C++, Micro-Python, Lua o JavaScript. Para la visualización de datos, pueden utilizar Python, junto con el uso de [notebooks](https://jupyter.org/).
-
-Estas son algunas bibliotecas (**LIBRARY != LLIBRERIA**) y herramientas que podrían utilizar para llevar a cabo las tareas que se presentan en las misiones:
-
-Para la conexión al broker MQTT:
-- [MQTTX](https://mqttx.app/)
-- [Eclipse PAHO (biblioteca MQTT para muchos lenguajes populares)](https://eclipse.dev/paho/)
-
-Para el desarrollo del Microcontrolador:
-- [Arduino IDE](https://www.arduino.cc/en/software)
-- [ESP8266 Datasheet (Resumen)](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/blob/main/documentation/NodeMCU%20Documentation.pdf)
-- [ESP8266 Technical Reference](https://www.espressif.com/sites/default/files/documentation/esp8266-technical_reference_en.pdf) 
-
-Para el procesamiento de datos:
-- [pandas](https://pandas.pydata.org/)
-- [numpy](https://numpy.org/)
-- [statsmodels](https://www.statsmodels.org/)
-- [matplotlib](https://pypi.org/project/matplotlib/)
-
-AI:
-- [scikit-learn](https://scikit-learn.org/stable/index.html)
-- [xgboost](https://xgboost.readthedocs.io/en/stable/)
-- [pytorch](https://pytorch.org/)
+Para evitaros problemas, en Google Cloud Platform, se permite conexion desde fuera desde cualquier IP hacia todos los puertos de las máquinas que creéis.
 
 
-## La puntuación 👀
+### MUY, MUCHO, MUCHÍSIMO IMPORTANTE
+Por favor, aseguraros de EXCLUIR las credenciales del repositorio publico de GitHub. Podéis crear un archivo `.gitignore` en la base de vuestro proyecto y añadir:
+```.gitignore
+**.json
+```
+Todo aviso muy importante tiene una historia detrás
 
-Tomaremos en cuenta la originalidad de las soluciones y de la presentación, el porcentaje de misiones completadas,
-la eficacia, la eficiencia, la excelencia y el éxito en las soluciones, el trabajo en equipo, la comunicación y queremos saber por qué deberían ser el equipo ganador.
+![](https://i.imgflip.com/aaq9wn.jpg)
 
-### El premio 🏆
-- 800€ para el 1er Premio
-- 200€ para el 2do Premio 
+# Documentación e información
+Podéis conectaros a una máquina vía [**SSH**](https://www.cloudflare.com/es-es/learning/access-management/what-is-ssh/). Además de conectaros por "usuario y contraseña", también podéis registrar una clave SSH que podéis generar con:
 
-¡Buena suerte!
+```sh
+ssh-keygen -t rsa -b 4096 -C "username"
+```
+
+Esto os da una clave privada (con el nombre que indiquéis) y una pública (el nombre que indiquéis + `.pub`). Al crear un equipo tanto en AWS como en GCP podéis indicarle la clave pública para que podáis conectaros con SSH luego:
+```sh
+ssh -i <archivo> username@IP-DE-LA-MÁQUINA
+```
+
+## Clusters
+```arduino
+[AWS]          [Azure]          [GCP]
+ Client VM     Client VM       Client VM
+      \           |              /
+       \          |             /
+        \         |            /
+            Master Node (VM)
+```
+- [Docker Swarm](https://docs.docker.com/engine/swarm/)
+- [Nomad](https://developer.hashicorp.com/nomad)
+- [K3s](https://k3s.io/)
+- [K8s (Kubernetes)](https://kubernetes.io/)
+
+## GCP
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Google_Cloud_logo.svg/1280px-Google_Cloud_logo.svg.png" width="300"/>
+
+En Google Cloud Platform podeis utilizar linea de comandos, y necesitareis instalar y configurar [`gcloud`](https://docs.cloud.google.com/sdk/docs/install).
+También tenéis librerías específicas para casi cada lenguaje de programacion:
+- [Go](https://docs.cloud.google.com/go/docs)
+- [JavaScript](https://docs.cloud.google.com/nodejs/docs)
+- [Python](https://docs.cloud.google.com/python/docs)
+- [Java](https://docs.cloud.google.com/java/docs)
+- [C++](https://docs.cloud.google.com/cpp/docs)
+- [C#](https://docs.cloud.google.com/dotnet/docs)
+
+Tenéis ejemplos de como usar las librerias en [la cuenta de Google Cloud Platform de Github](https://github.com/GoogleCloudPlatform).
+En concreto, el _producto_ que se utiliza es [Compute Engine](https://cloud.google.com/products/compute?hl=es)
+
+Se recomienda que pongáis el idioma de la documentación en inglés, ya que las versiones al castellano son bastante deficientes.
+
+Además, tenéis unos ejemplos ChatGPT made para que podáis probar sin volveros locos en este mismo repositorio, en `examples\google-cloud-platform`. Revisad el README asociado al lenguaje que queráis probar.
+
+- [Python](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/python)
+- [Java](https://github.com/Applied-Artificial-Intelligence-Eurecat/hackeps/tree/main/examples/google-cloud-platform/java)
+
+## AWS
+<img src="https://miro.medium.com/v2/resize:fit:1200/1*neG4D9C8UcJvNn6bverfIA.png" width="300"/>
+
+
+# Ganadores 🏅
+En esta ocasión, se nombrán dos equipos ganadores:
+- **Ganadores:** Un premio al equipo que logre una solución más equilibrada entre calidad, ejecución e idea
+- **Jóvenes promesas:** Premio destinado a equipos cuyos miembros no tengan conocimientos previos, que presenten una solución bien ideada y demuestren su capacidad de aprendizaje.
+
+### ¿Qué se valorará? 
+Se valorará tanto la demo presentada durante la exposición final como toda la información incluida en la publicación de Devpost (recordad que podéis actualizarla incluso después del cierre). A partir de ello evaluaremos, **principalmente**:
+
+**Para el primer premio**
+- **Ideas implementadas:** Se tendrá en cuenta el nivel de originalidad, las propuestas que vayan más allá de lo básico, los flujos planteados y cualquier funcionalidad novedosa que resulte útil o práctica.
+
+- **Funcionalidad:** Cómo de bien funciona el proyecto en su conjunto, el estado de cada parte, y la calidad de la integración entre ellas.
+
+- **Arquitectura:** Valoraremos si la arquitectura propuesta tendría sentido en un entorno real, si es escalable y si está bien planteada.
+
+- **Tecnologías:** No importa el lenguaje en sí, sino las tecnologías complementarias usadas: frameworks web (React, Angular, Vue…), bases de datos (Mongo, Postgres, MariaDB…), contenedores (Docker), etc.
+
+- **Calidad del código:** Aun siendo una hackathon, se tendrá en cuenta evitar abusar de hardcoding, mantener unas mínimas buenas prácticas (indentación, tipado en lenguajes no estrictamente tipados, organización del proyecto…).
+
+**Para jóvenes promesas**
+- **Ideas implementadas:** Igual que en la categoría general, se valorará la originalidad y la aportación de funcionalidades útiles más allá de lo básico.
+
+- **Aprendizaje:** Si había o no experiencia previa, qué habéis aprendido en estas 24 horas, los principales retos encontrados y cómo los habéis solucionado.
+
+- **Trabajo en equipo:** Cómo os habéis organizado, reparto de tareas y dinámica de colaboración.
+
+- **Calidad del código:** Mismos criterios que en la categoría principal: evitar hardcoding innecesario y mantener un mínimo de orden y coherencia.
+
+- **Presentación de la idea:** Claridad al explicar la propuesta, su enfoque y su objetivo.
+
+
+## El premio 🤑
+
+- Cheque Amazon por valor de 1000€ para el **primer premio**
+- Cheque Amazon por valor de 200€ para el premio de **jóvenes promesas**
