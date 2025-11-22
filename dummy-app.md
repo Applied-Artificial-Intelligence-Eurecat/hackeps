@@ -69,7 +69,7 @@ services:
           memory: "1024M"
 
 ```
-
+Para verla en acción, instalad Docker en vuestro ordenador, poned el compose en un fichero `docker-compose.yaml`, abrid una línea de comandos en el directorio donde esté el fichero y ejecutad `docker-compose up`. Abrid el navegador y podréis entrar a  `http://localhost:30008/` para ver la UI.
 
 Algunos detalles importantes:
 
